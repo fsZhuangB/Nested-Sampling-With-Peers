@@ -1,0 +1,22 @@
+\contentsline {chapter}{Abstract}{1}%
+\contentsline {chapter}{\numberline {1}Introduction}{5}%
+\contentsline {section}{\numberline {1.1}Bayesian Analysis}{5}%
+\contentsline {subsection}{\numberline {1.1.1}Marginal Likelihood}{5}%
+\contentsline {section}{\numberline {1.2}Nested Sampling}{5}%
+\contentsline {section}{\numberline {1.3}Distributed System}{5}%
+\contentsline {subsection}{\numberline {1.3.1}BONIC}{5}%
+\contentsline {section}{\numberline {1.4}Spakslab Problem}{5}%
+\contentsline {chapter}{\numberline {2}Literature Review}{7}%
+\contentsline {subsection}{\numberline {2.0.1}Itemized lists}{8}%
+\contentsline {subsection}{\numberline {2.0.2}Inserting figures}{9}%
+\contentsline {subsection}{\numberline {2.0.3}Tables}{9}%
+\contentsline {subsection}{\numberline {2.0.4}How to Refer to Equations, Sections, etc}{10}%
+\contentsline {chapter}{\numberline {3}Methodologies and analysis}{13}%
+\contentsline {section}{\numberline {3.1}Methodologies}{13}%
+\contentsline {section}{\numberline {3.2}Analysis}{13}%
+\contentsline {chapter}{\numberline {4}Discussion }{15}%
+\contentsline {section}{\numberline {4.1}Main results}{15}%
+\contentsline {section}{\numberline {4.2}Discussion}{15}%
+\contentsline {chapter}{\numberline {5}Conclusions}{17}%
+\contentsline {chapter}{References}{19}%
+\contentsline {chapter}{\numberline {A}Some extra things}{21}%
