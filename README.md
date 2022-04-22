@@ -8,23 +8,23 @@ The final submission date: **5pm, Monday 27th June**.
 By the end of **Monday 2nd May** provide a one-page summary, with the following details:
 
 - [x] Project title, student name, supervisor name(s)
-- [] Project description
-- [] Research question
-- [] Proposed methodology
-- [] Progress so far / work in progress
-- [] Proposed timeline to completion of dissertation
+- [ ] Project description
+- [ ] Research question
+- [ ] Proposed methodology
+- [ ] Progress so far / work in progress
+- [ ] Proposed timeline to completion of dissertation
 Note: the focus of this summary is to address points 4-6. 
 
 ### 2. Milestone Two:
 By the end of **Monday 30th May**, provide a pre-recorded video, of no longer than 5 minutes, with the following details:
 
-- [] Project title, student name, supervisor name(s) (1 slide)
-- [] Project description (1 slide)
-- [] Research question (1 slide)
-- [] Literature review (up to 2 slides)
-- [] Methodology (1 slide)
-- [] Milestones to completion of dissertation (1 slide)
-- [] References (up to 2 slides)
+- [ ] Project title, student name, supervisor name(s) (1 slide)
+- [ ] Project description (1 slide)
+- [ ] Research question (1 slide)
+- [ ] Literature review (up to 2 slides)
+- [ ] Methodology (1 slide)
+- [ ] Milestones to completion of dissertation (1 slide)
+- [ ] References (up to 2 slides)
 It is required to make yourself visible as part of the pre-recorded video, in the form of a picture that shows you speaking to the slides you present. If you want to prepare a written document or notes to read to help you with your presentation, that is no problem.
 
 ### 3. Milestone Three:
