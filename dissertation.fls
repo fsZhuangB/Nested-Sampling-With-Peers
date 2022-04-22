@@ -1,9 +1,9 @@
-PWD /Users/fszhuangb/Downloads/nested sampling with peers/必要材料/LaTeX Dissertation Template
+PWD /Users/fszhuangb/Downloads/nested sampling with peers/Nested-Sampling-With-Peers
 INPUT /usr/local/texlive/2020/texmf.cnf
 INPUT /usr/local/texlive/2020/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2020/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT /Users/fszhuangb/Downloads/nested sampling with peers/必要材料/LaTeX Dissertation Template/dissertation.tex
-OUTPUT /Users/fszhuangb/Downloads/nested sampling with peers/必要材料/LaTeX Dissertation Template/dissertation.log
+INPUT /Users/fszhuangb/Downloads/nested sampling with peers/Nested-Sampling-With-Peers/dissertation.tex
+OUTPUT /Users/fszhuangb/Downloads/nested sampling with peers/Nested-Sampling-With-Peers/dissertation.log
 INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/base/book.cls
 INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/base/book.cls
 INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/base/bk11.clo
@@ -40,9 +40,9 @@ INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/graphics-def/pdftex.def
 INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/graphics-def/pdftex.def
 INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
 INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
-INPUT /Users/fszhuangb/Downloads/nested sampling with peers/必要材料/LaTeX Dissertation Template/dissertation.aux
-INPUT /Users/fszhuangb/Downloads/nested sampling with peers/必要材料/LaTeX Dissertation Template/dissertation.aux
-OUTPUT /Users/fszhuangb/Downloads/nested sampling with peers/必要材料/LaTeX Dissertation Template/dissertation.aux
+INPUT /Users/fszhuangb/Downloads/nested sampling with peers/Nested-Sampling-With-Peers/dissertation.aux
+INPUT /Users/fszhuangb/Downloads/nested sampling with peers/Nested-Sampling-With-Peers/dissertation.aux
+OUTPUT /Users/fszhuangb/Downloads/nested sampling with peers/Nested-Sampling-With-Peers/dissertation.aux
 INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/adobe/times/ptmr7t.tfm
@@ -53,10 +53,10 @@ INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.st
 INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/adobe/times/ptmr7t.tfm
-INPUT /Users/fszhuangb/Downloads/nested sampling with peers/必要材料/LaTeX Dissertation Template/logo.jpg
-INPUT /Users/fszhuangb/Downloads/nested sampling with peers/必要材料/LaTeX Dissertation Template/logo.jpg
-OUTPUT /Users/fszhuangb/Downloads/nested sampling with peers/必要材料/LaTeX Dissertation Template/dissertation.pdf
-INPUT /Users/fszhuangb/Downloads/nested sampling with peers/必要材料/LaTeX Dissertation Template/logo.jpg
+INPUT /Users/fszhuangb/Downloads/nested sampling with peers/Nested-Sampling-With-Peers/logo.jpg
+INPUT /Users/fszhuangb/Downloads/nested sampling with peers/Nested-Sampling-With-Peers/logo.jpg
+OUTPUT /Users/fszhuangb/Downloads/nested sampling with peers/Nested-Sampling-With-Peers/dissertation.pdf
+INPUT /Users/fszhuangb/Downloads/nested sampling with peers/Nested-Sampling-With-Peers/logo.jpg
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/adobe/times/ptmr7t.tfm
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/vf/adobe/times/ptmr7t.vf
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/adobe/times/ptmr8r.tfm
@@ -69,8 +69,8 @@ INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/vf/adobe/times/ptmb7t.vf
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/adobe/times/ptmb8r.tfm
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/adobe/times/ptmro7t.tfm
-INPUT /Users/fszhuangb/Downloads/nested sampling with peers/必要材料/LaTeX Dissertation Template/dissertation.toc
-INPUT /Users/fszhuangb/Downloads/nested sampling with peers/必要材料/LaTeX Dissertation Template/dissertation.toc
+INPUT /Users/fszhuangb/Downloads/nested sampling with peers/Nested-Sampling-With-Peers/dissertation.toc
+INPUT /Users/fszhuangb/Downloads/nested sampling with peers/Nested-Sampling-With-Peers/dissertation.toc
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmr8.tfm
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmr6.tfm
@@ -93,7 +93,7 @@ INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/umsb.fd
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
-OUTPUT /Users/fszhuangb/Downloads/nested sampling with peers/必要材料/LaTeX Dissertation Template/dissertation.toc
+OUTPUT /Users/fszhuangb/Downloads/nested sampling with peers/Nested-Sampling-With-Peers/dissertation.toc
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/vf/adobe/times/ptmb7t.vf
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/adobe/times/ptmb8r.tfm
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/vf/adobe/times/ptmro7t.vf
@@ -118,13 +118,13 @@ INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/adobe/times/ptmr8c.tfm
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/vf/adobe/times/ptmr8c.vf
-INPUT /Users/fszhuangb/Downloads/nested sampling with peers/必要材料/LaTeX Dissertation Template/modes.jpg
-INPUT /Users/fszhuangb/Downloads/nested sampling with peers/必要材料/LaTeX Dissertation Template/modes.jpg
-INPUT /Users/fszhuangb/Downloads/nested sampling with peers/必要材料/LaTeX Dissertation Template/modes.jpg
+INPUT /Users/fszhuangb/Downloads/nested sampling with peers/Nested-Sampling-With-Peers/modes.jpg
+INPUT /Users/fszhuangb/Downloads/nested sampling with peers/Nested-Sampling-With-Peers/modes.jpg
+INPUT /Users/fszhuangb/Downloads/nested sampling with peers/Nested-Sampling-With-Peers/modes.jpg
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/adobe/times/ptmri7t.tfm
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/vf/adobe/times/ptmri7t.vf
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/adobe/times/ptmri8r.tfm
-INPUT /Users/fszhuangb/Downloads/nested sampling with peers/必要材料/LaTeX Dissertation Template/dissertation.aux
+INPUT /Users/fszhuangb/Downloads/nested sampling with peers/Nested-Sampling-With-Peers/dissertation.aux
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/base/8r.enc
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb

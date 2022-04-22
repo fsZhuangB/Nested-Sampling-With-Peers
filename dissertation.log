@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.8.20)  22 APR 2022 10:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.8.20)  22 APR 2022 19:09
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"/Users/fszhuangb/Downloads/nested sampling with peers/必要材料/LaTeX Dissertation Template/dissertation.tex"
-(/Users/fszhuangb/Downloads/nested sampling with peers/必要材料/LaTeX Dissertation Template/dissertation.tex
+**"/Users/fszhuangb/Downloads/nested sampling with peers/Nested-Sampling-With-Peers/dissertation.tex"
+(/Users/fszhuangb/Downloads/nested sampling with peers/Nested-Sampling-With-Peers/dissertation.tex
 LaTeX2e <2020-02-02> patch level 5
 L3 programming layer <2020-03-06> (/usr/local/texlive/2020/texmf-dist/tex/latex/base/book.cls
 Document Class: book 2019/12/20 v1.4l Standard LaTeX document class
@@ -111,7 +111,7 @@ File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count188
 \l__pdf_internal_box=\box47
-) (/Users/fszhuangb/Downloads/nested sampling with peers/必要材料/LaTeX Dissertation Template/dissertation.aux)
+) (/Users/fszhuangb/Downloads/nested sampling with peers/Nested-Sampling-With-Peers/dissertation.aux)
 \openout1 = `dissertation.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 31.
@@ -157,11 +157,11 @@ Package pdftex.def Info: logo.jpg  used on input line 48.
 (pdftex.def)             Requested size: 56.9055pt x 64.47678pt.
  [1
 
-{/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map} </Users/fszhuangb/Downloads/nested sampling with peers/必要材料/LaTeX Dissertation Template/logo.jpg>] [2
+{/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map} </Users/fszhuangb/Downloads/nested sampling with peers/Nested-Sampling-With-Peers/logo.jpg>] [2
 
 ] [1] [2
 
-] (/Users/fszhuangb/Downloads/nested sampling with peers/必要材料/LaTeX Dissertation Template/dissertation.toc
+] (/Users/fszhuangb/Downloads/nested sampling with peers/Nested-Sampling-With-Peers/dissertation.toc
 LaTeX Font Info:    Trying to load font information for U+msa on input line 3.
  (/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -181,36 +181,36 @@ Chapter 1.
 
 ]
 Chapter 2.
-LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 133.
+LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 132.
 (/usr/local/texlive/2020/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
-Overfull \hbox (17.38231pt too wide) in paragraph at lines 135--137
+Overfull \hbox (17.38231pt too wide) in paragraph at lines 134--136
 []\OT1/ptm/m/n/10.95 Mathematical sym-bols: $[] [] [] [] [] []$ ([][]\OT1/pcr/m/n/10.95 $\int\oint\sum\lim\bigcup\bigcap$[]\OT1/ptm/m/n/10.95 ). 
  []
 
 
-Overfull \hbox (57.87708pt too wide) in paragraph at lines 162--164
+Overfull \hbox (57.87708pt too wide) in paragraph at lines 161--163
 \OT1/ptm/m/n/10.95 can be re-ferred to some-where else in the text by us-ing [][]\OT1/pcr/m/n/10.95 \ref{eqn:matrix} []\OT1/ptm/m/n/10.95 or [][]\OT1/pcr/m/n/10.95 \eqref{eqn:matrix}[]\OT1/ptm/m/n/10.95 . 
  []
 
 [7]
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 182.
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 181.
  (/usr/local/texlive/2020/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 ) [8]
 <modes.jpg, id=46, 477.7047pt x 377.2494pt>
 File: modes.jpg Graphic file (type jpg)
 <use modes.jpg>
-Package pdftex.def Info: modes.jpg  used on input line 222.
+Package pdftex.def Info: modes.jpg  used on input line 221.
 (pdftex.def)             Requested size: 247.54149pt x 195.48581pt.
- [9 </Users/fszhuangb/Downloads/nested sampling with peers/必要材料/LaTeX Dissertation Template/modes.jpg>]
-Overfull \hbox (99.89442pt too wide) in paragraph at lines 260--260
+ [9 </Users/fszhuangb/Downloads/nested sampling with peers/Nested-Sampling-With-Peers/modes.jpg>]
+Overfull \hbox (99.89442pt too wide) in paragraph at lines 259--259
 []\OT1/pcr/m/n/10.95 \caption[title of table]{\textbf{title of table} - Overview of latexin genes.}[] 
  []
 
 
-Overfull \hbox (47.33449pt too wide) in paragraph at lines 260--260
+Overfull \hbox (47.33449pt too wide) in paragraph at lines 259--259
 []\OT1/pcr/m/n/10.95 \label{latexin_genes} % label for cross-links with \ref{latexin_genes}[] 
  []
 
@@ -232,17 +232,17 @@ Chapter 5.
 
 ]
 Appendix A.
-[21] (/Users/fszhuangb/Downloads/nested sampling with peers/必要材料/LaTeX Dissertation Template/dissertation.aux) ) 
+[21] (/Users/fszhuangb/Downloads/nested sampling with peers/Nested-Sampling-With-Peers/dissertation.aux) ) 
 Here is how much of TeX's memory you used:
  2446 strings out of 480608
- 32881 string characters out of 5903630
+ 32727 string characters out of 5903630
  267767 words of memory out of 5000000
  18311 multiletter control sequences out of 15000+600000
  555040 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 30i,12n,27p,662b,276s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 30i,12n,27p,648b,276s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on "/Users/fszhuangb/Downloads/nested sampling with peers/必要材料/LaTeX Dissertation Template/dissertation.pdf" (23 pages, 210687 bytes).
+Output written on "/Users/fszhuangb/Downloads/nested sampling with peers/Nested-Sampling-With-Peers/dissertation.pdf" (23 pages, 210250 bytes).
 PDF statistics:
  129 PDF objects out of 1000 (max. 8388607)
  89 compressed objects within 1 object stream
