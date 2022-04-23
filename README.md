@@ -8,8 +8,8 @@ The final submission date: **5pm, Monday 27th June**.
 By the end of **Monday 2nd May** provide a one-page summary, with the following details:
 
 - [x] Project title, student name, supervisor name(s)
-- [ ] Project description
-- [ ] Research question
+- [x] Project description
+- [x] Research question
 - [ ] Proposed methodology
 - [ ] Progress so far / work in progress
 - [ ] Proposed timeline to completion of dissertation

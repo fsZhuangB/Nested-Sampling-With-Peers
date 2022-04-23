@@ -1,0 +1,49 @@
+
+\setlength{\oddsidemargin}{1.5cm}
+\setlength{\evensidemargin}{0cm}
+\setlength{\topmargin}{1mm}
+\setlength{\headheight}{1.36cm}
+\setlength{\headsep}{1.00cm}
+%\setlength{\textheight}{20.84cm}
+\setlength{\textheight}{19cm}
+\setlength{\textwidth}{14.5cm}
+\setlength{\marginparsep}{1mm}
+\setlength{\marginparwidth}{3cm}
+\setlength{\footskip}{2.36cm}
+
+
+\documentclass{article}
+\title{Nested Sampling With Peers}
+
+\author{
+  Student: Feishuang Wang\\
+  \texttt{fszhuangb@gmail.com}
+  \and
+  Supervisor: Dr Brendon James Brewer\\
+  \texttt{bj.brewer@auckland.ac.nz}
+}
+\date{\today}
+
+
+% milestones 1
+\begin{document}
+\maketitle
+
+\section{Project description}
+A nested sampling algorithm is a Bayesian approach to computing and comparing models and generating samples from posterior distributions. We introduce a general Monte Carlo method based on Nested Sampling, which name is Nested Sampling with peers. As an MCMC method, the least likelihood of the sample will be discarded and replaced. This method generates one particle above the threshold from the last iteration by querying the params from the server and updating it. We describe the new method over a test case named Spikeslab Problem and we will explore if it will have better or worse accuracy than the original MCMC-based nested sampling with the same computational overhead.
+\section{Research question}
+The research question is nested sampling with peers,  this method generates one particle above the threshold from the last iteration by querying the parameters from the server and updating them. 
+\section{Proposed methodology}
+The context of Bayesian Theorem shows that the likelihood function is $p(D|\theta)$, the prior distribution is 
+$p(\theta)$, and the marginal likelihood function is $p(D)$, using the prior distribution and
+likelihood function of the data D, we can obtain the posterior distribution of $\theta$:
+\begin{equation}
+    p(\theta|D) = \frac{\pi(\theta)d(\theta)}{p(D|\theta)}
+\end{equation}
+where the $p(\theta|D)$ is the posterior distribution.
+
+
+\section{ Progress so far / work in progress}
+\section{ Proposed timeline to completion of dissertation Note}
+
+\end{document}
