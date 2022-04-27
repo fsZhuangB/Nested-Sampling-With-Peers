@@ -13,6 +13,11 @@
 
 
 \documentclass{article}
+\usepackage{enumitem}
+\usepackage{amssymb}
+\newlist{todolist}{itemize}{2}
+\setlist[todolist]{label=$\checkmark$}
+
 \title{Nested Sampling With Peers}
 
 \author{
@@ -41,9 +46,41 @@ likelihood function of the data D, we can obtain the posterior distribution of $
     p(\theta|D) = \frac{\pi(\theta)d(\theta)}{p(D|\theta)}
 \end{equation}
 where the $p(\theta|D)$ is the posterior distribution.
-
+In this dissertation, within the nested sampling paradigm, 
+I will go through a specific problem named Spikeslab problem and build the original nested sampling based on the Metropolis algorithm on this specific problem,
+and then calculate the MSE of different methods for comparison, where the implementation of nested sampling is done in C++, 
+and the server is built using the python language and Flask web framework
 
 \section{ Progress so far / work in progress}
-\section{ Proposed timeline to completion of dissertation Note}
+So far, the project has been established, 
+the server has been successfully set up and 
+is currently verifying whether the nested sampling with peers method has improved compared with the traditional nested sampling method
+\section{ Proposed timeline to completion of dissertation}
+\begin{itemize}
+    \item proprosed timeline to finish the dissertation"
+  
+    \begin{todolist}
+      \item Building the basic programming environment:
+      \begin{todolist}
+        \item Operating system: Ubuntu 16.04, macOS 10.15.4
+        \item Compiler: gcc 9.3.0
+        \item Language: C++17, Python 3.8
+        \item Editor: Visual Studio Code
+      \end{todolist}
+      \item Implement the basic nested sampling algorithm
+      \item Calculating MSE function
+      \item Implement the nested sampling with peers algorithm
+      \begin{todolist}
+        \item Implement the Flask web server
+        \item Implement the updating particles from peers
+      \end{todolist}
+      \item[$\square$] Re-test the model by updating the database every iteration
+      \item[$\square$] Comparing models
+      \item[$\square$] Summarise the results
+    \end{todolist}
+
+
+  
+  \end{itemize}
 
 \end{document}
