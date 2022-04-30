@@ -10,9 +10,9 @@ By the end of **Monday 2nd May** provide a one-page summary, with the following 
 - [x] Project title, student name, supervisor name(s)
 - [x] Project description
 - [x] Research question
-- [ ] Proposed methodology
-- [ ] Progress so far / work in progress
-- [ ] Proposed timeline to completion of dissertation
+- [x] Proposed methodology
+- [x] Progress so far / work in progress
+- [x] Proposed timeline to completion of dissertation
 Note: the focus of this summary is to address points 4-6. 
 
 ### 2. Milestone Two:
