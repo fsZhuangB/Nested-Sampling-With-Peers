@@ -123,15 +123,14 @@ after that we can use Bayes’ Theorem to determine the \textit{posterior distri
 \end{equation}
 in the above equation, 
 \begin{enumerate}
-	\item $p(\theta|D)$ is the posterior distribution, the conditional distribution of $\theta$ given the observed data, $D$.
- \item $p{(\theta)}$ is prior distribution specified based on prior assumptions or information
- \item $p(D|\theta)$ is the likelihood which refers to the conditional
- probability of observing the data
- \item  $p(D)$ is the marginal likelihood (or evidence) that refers to the probability of $D$
- regardless of the values of $\theta$.
+\item The posterior distribution is $p(\theta|D)$, given the data set $D$ with the conditional distribution of $\theta$.
+ \item The prior distribution is $p{(\theta)}$.
+ \item The likelihood is $p(D|\theta)$, it means the conditional probability of observing the data.
+ \item  The denominator $p(D)$ is called marginal likelihood or evidence, it doesn't depend on the parameter $\theta$.
 \end{enumerate}
-
-
+ The posterior distribution is usually more constricted than the prior distribution, 
+ indicating that we have gained some insights from the data and that our level of uncertainty about the parameter values has been lowered.
+ See the Figure 1.1 for how we often see the updating from the prior distribution to a posterior distribution.
 \subsection{Marginal Likelihood}
 % The main strength of LaTex is  mathematical typesetting.  
 
