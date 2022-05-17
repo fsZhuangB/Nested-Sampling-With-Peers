@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1650625761 "/Users/fszhuangb/Downloads/nested sampling with peers/Nested-Sampling-With-Peers/dissertation.tex" "/Users/fszhuangb/Downloads/nested sampling with peers/Nested-Sampling-With-Peers/dissertation.pdf" "dissertation" 1650625762
-  "/Users/fszhuangb/Downloads/nested sampling with peers/Nested-Sampling-With-Peers/dissertation.aux" 1650625761 3446 576dc6d630bf7994c9c4203cc8af109c ""
-  "/Users/fszhuangb/Downloads/nested sampling with peers/Nested-Sampling-With-Peers/dissertation.tex" 1650625760 11440 4d649a59a578ef92a471f98e7ac641d2 ""
+["pdflatex"] 1652749474 "/Users/fszhuangb/Downloads/nested sampling with peers/Nested-Sampling-With-Peers/dissertation.tex" "/Users/fszhuangb/Downloads/nested sampling with peers/Nested-Sampling-With-Peers/dissertation.pdf" "dissertation" 1652749474
+  "/Users/fszhuangb/Downloads/nested sampling with peers/Nested-Sampling-With-Peers/dissertation.aux" 1652749474 3446 9983afc759856d26152808e66d7e81e6 ""
+  "/Users/fszhuangb/Downloads/nested sampling with peers/Nested-Sampling-With-Peers/dissertation.tex" 1652749472 12802 6da2b30e1fa8a74dcdeace49bcaf879a ""
   "/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2020/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2020/texmf-dist/fonts/tfm/adobe/courier/pcrr7t.tfm" 1136768653 960 379cc0019370a9e0208a0a3f949f847a ""
@@ -77,15 +77,15 @@
   "/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1586288239 4811913 0be9a7e86c70a26e5e3042966bcd7097 ""
   "/usr/local/texlive/2020/texmf-var/web2c/pdftex/pdflatex.fmt" 1597935571 2432462 5a6c50c1663b5f4655e0fc0994890f9f ""
   "/usr/local/texlive/2020/texmf.cnf" 1586288231 577 d60164b4589a341208aff7a667fbbdcb ""
-  "dissertation.aux" 1650625761 3446 576dc6d630bf7994c9c4203cc8af109c "pdflatex"
-  "dissertation.tex" 1650625760 11440 4d649a59a578ef92a471f98e7ac641d2 ""
-  "dissertation.toc" 1650625761 1347 a684367e65c270f0f0ab29bd588be9d6 "pdflatex"
+  "dissertation.aux" 1652749474 3446 9983afc759856d26152808e66d7e81e6 "pdflatex"
+  "dissertation.tex" 1652749472 12802 6da2b30e1fa8a74dcdeace49bcaf879a ""
+  "dissertation.toc" 1652749474 1347 6fb3685e38566b7b7f7ae4deddc6db4c "pdflatex"
   "logo.jpg" 1650599698 20958 7f0cb3b668b7ada6ac8c939c92dcbb5d ""
   "modes.jpg" 1650599698 43944 b91c2460e28ed5e12567006c5da44c3b ""
   (generated)
-  "dissertation.toc"
-  "dissertation.log"
-  "dissertation.aux"
-  "/Users/fszhuangb/Downloads/nested sampling with peers/Nested-Sampling-With-Peers/dissertation.pdf"
   "/Users/fszhuangb/Downloads/nested sampling with peers/Nested-Sampling-With-Peers/dissertation.log"
+  "dissertation.log"
   "dissertation.pdf"
+  "/Users/fszhuangb/Downloads/nested sampling with peers/Nested-Sampling-With-Peers/dissertation.pdf"
+  "dissertation.aux"
+  "dissertation.toc"

@@ -110,6 +110,27 @@ finding and conclusions of the dissertation.  The abstract should normally be fe
 \chapter{Introduction}%    \chapter{}  = level 1, top level
 
 \section{Bayesian Analysis} 
+The Bayesian Analysis problem is in fact a parameter estimation problem, 
+The term \textit{parameter} means \textit{unknown quantity}, howerver in real world, we don't 
+have enough information to decide a quantity, so we need Bayesian Analysis to help us.
+The parameter you interested in are denoted by $\theta$, to estimate them, first of all, you need to 
+model a probability distribution on the \textit{hypothesis space}, a \textit{hypothesis space} is the 
+collection of possibilities, this means that you are modeling the initial assumptions, and the probability distribution
+is called the \textit{prior}, it is the distribution of $\theta$. The data set is called D, 
+after that we can use Bayes’ Theorem to determine the \textit{posterior distribution}:
+\begin{equation}
+	p(\theta|D) = \frac{p{(\theta)}p(D|\theta)}{p(D)}
+\end{equation}
+in the above equation, 
+\begin{enumerate}
+	\item $p(\theta|D)$ is the posterior distribution, the conditional distribution of $\theta$ given the observed data, $D$.
+ \item $p{(\theta)}$ is prior distribution specified based on prior assumptions or information
+ \item $p(D|\theta)$ is the likelihood which refers to the conditional
+ probability of observing the data
+ \item  $p(D)$ is the marginal likelihood (or evidence) that refers to the probability of $D$
+ regardless of the values of $\theta$.
+\end{enumerate}
+
 
 \subsection{Marginal Likelihood}
 % The main strength of LaTex is  mathematical typesetting.  
