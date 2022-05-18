@@ -142,7 +142,7 @@ in the above equation,
 % The file \verb+latex-howto.tex+ in this folder also contains examples of many latex commands.
 \section{Nested Sampling} 
 
-\subsection*{Model Selection with Nested Sampling}
+\subsection{Model Selection with Nested Sampling}
 Consider two mutually exclusive model $M_1$ and $M_2$, $M_1$ has the parameter $\theta_1$ and $M_2$ has the 
 parameter $\theta_2$, from previous method we discussed, we can calculate the posterior distribution of $\theta_1$ :
 \begin{equation}
@@ -158,6 +158,38 @@ For simplicity, we often calculate the ratio of posterior distributions to compa
 \end{equation}
 The result of this formula is called \textit{posterior odds}, the posterior probability of M2 over M1 depends on the prior probability: is M2 more credible than M1 before considering the data? Another ratio is the ratio of likelihoods, sometimes called the Bayesian coefficient; how likely is the data for hypothetical M2 versus hypothetical M1? These possibilities are not the likelihood of a particular value of the parameter, but the likelihood of the entire model.
 We have to use the marginal likelihood to make a better progress.
+\subsection{Sorting}
+In multiple dimensions, the direct integration calculation for the edge likelihood becomes unrealistic, we define the 
+ $X$ as the model's prior mass, it can be integrated in this form:
+ \begin{equation}
+	X(\lambda) = \int _{L(\theta)> \lambda}\pi(\theta)d\theta
+ \end{equation}
+ we can write the inverse function $L(X)$, the marginal likelihood \textit{i.e.} evidence will
+ be in this form:
+ \begin{equation}
+	 Z = \int ^{1}_{0} L(X) dX
+ \end{equation}
+ To get the inverse function, we can divide the prior into little particles and then sort all the particles by likelihood.
+ In geometrical terms, the function $L(X)$ is monotonically diminishing, and the likelihood decreases as the value of X increases from 0 to 1, as shown in Figure 1.1.
+From the figure1.1 we can find that when approaching the maximum likelihood, $X$ will keep decreasing.
+ \begin{center}
+	\begin{figure}[h]
+			\centering
+			\includegraphics[width=0.6\textwidth]{areaz}
+			\caption{Likelihood function with area Z.}
+			\label{fig:modes}
+	\end{figure}
+	\end{center}
+The explanation of 1.5 is that the $L(X)$ is the probability corresponding to $\lambda$ that makes the probability, $L(\theta)$, greater than $\lambda$ for $X$. 
+$L(0.4) = 0.01$ may be interpreted as a 40$\%$ probability that $\pi(\theta)$ will be greater than 0.01 for $\theta$ chosen from the prior.
+To evaluate the mapped integral in 1.5, Skilling proposed a simple trapezoidal rule by calculating 
+weighted sums:
+\begin{equation}
+	Z \approx \sum_{i=1}^{j}w_iL_i (w_i = \frac{1}{2}(X_{i-1} -X_{i+1}))
+\end{equation}
+In every iteration i, the likelihood is $L(X_i)$, and $j$ is total number of iterations.
+\subsection{Nested Sampling Algorithms}
+
 \section{Distributed System}
 \subsection{BONIC}
 \section{Spakslab Problem}
