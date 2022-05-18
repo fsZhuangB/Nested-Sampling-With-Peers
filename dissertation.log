@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.5.16)  17 MAY 2022 10:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.5.16)  18 MAY 2022 10:45
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -180,38 +180,38 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 Chapter 1.
 [5] [6]
 Chapter 2.
-LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 152.
+LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 170.
 (/usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
-Overfull \hbox (17.38231pt too wide) in paragraph at lines 154--156
+Overfull \hbox (17.38231pt too wide) in paragraph at lines 172--174
 []\OT1/ptm/m/n/10.95 Mathematical sym-bols: $[] [] [] [] [] []$ ([][]\OT1/pcr/m/n/10.95 $\int\oint\sum\lim\bigcup\bigcap$[]\OT1/ptm/m/n/10.95 ). 
  []
 
 
-Overfull \hbox (57.87708pt too wide) in paragraph at lines 181--183
+Overfull \hbox (57.87708pt too wide) in paragraph at lines 199--201
 \OT1/ptm/m/n/10.95 can be re-ferred to some-where else in the text by us-ing [][]\OT1/pcr/m/n/10.95 \ref{eqn:matrix} []\OT1/ptm/m/n/10.95 or [][]\OT1/pcr/m/n/10.95 \eqref{eqn:matrix}[]\OT1/ptm/m/n/10.95 . 
  []
 
 [7
 
 ]
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 201.
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 219.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 ) [8]
 <modes.jpg, id=47, 477.7047pt x 377.2494pt>
 File: modes.jpg Graphic file (type jpg)
 <use modes.jpg>
-Package pdftex.def Info: modes.jpg  used on input line 241.
+Package pdftex.def Info: modes.jpg  used on input line 259.
 (pdftex.def)             Requested size: 247.54149pt x 195.48581pt.
  [9 <./modes.jpg>]
-Overfull \hbox (99.89442pt too wide) in paragraph at lines 279--279
+Overfull \hbox (99.89442pt too wide) in paragraph at lines 297--297
 []\OT1/pcr/m/n/10.95 \caption[title of table]{\textbf{title of table} - Overview of latexin genes.}[] 
  []
 
 
-Overfull \hbox (47.33449pt too wide) in paragraph at lines 279--279
+Overfull \hbox (47.33449pt too wide) in paragraph at lines 297--297
 []\OT1/pcr/m/n/10.95 \label{latexin_genes} % label for cross-links with \ref{latexin_genes}[] 
  []
 
@@ -243,7 +243,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  55i,12n,62p,638b,287s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on dissertation.pdf (23 pages, 222721 bytes).
+Output written on dissertation.pdf (23 pages, 224779 bytes).
 PDF statistics:
  141 PDF objects out of 1000 (max. 8388607)
  89 compressed objects within 1 object stream

@@ -132,6 +132,7 @@ in the above equation,
  indicating that we have gained some insights from the data and that our level of uncertainty about the parameter values has been lowered.
  See the Figure 1.1 for how we often see the updating from the prior distribution to a posterior distribution.
 \subsection{Marginal Likelihood}
+
 % The main strength of LaTex is  mathematical typesetting.  
 
 % There is a huge amount of information about LaTex on the internet.
@@ -140,6 +141,23 @@ in the above equation,
 % This document gives a lot of sample LaTex commands.  
 % The file \verb+latex-howto.tex+ in this folder also contains examples of many latex commands.
 \section{Nested Sampling} 
+
+\subsection*{Model Selection with Nested Sampling}
+Consider two mutually exclusive model $M_1$ and $M_2$, $M_1$ has the parameter $\theta_1$ and $M_2$ has the 
+parameter $\theta_2$, from previous method we discussed, we can calculate the posterior distribution of $\theta_1$ :
+\begin{equation}
+	p(\theta_1|D, M_1) = \frac{p(\theta_1|M_1)p(D|\theta_1, M_1)}{p(D|M_1)}
+\end{equation}
+Same, calculate the posterior distribution of $\theta_2$ 
+\begin{equation}
+	p(\theta_2|D, M_2) = \frac{p(\theta_2|M_2)p(D|\theta_2, M_2)}{p(D|M_2)}
+\end{equation}
+For simplicity, we often calculate the ratio of posterior distributions to compare models:
+\begin{equation}
+	\frac{p(M_1|D)}{p(M_2|D)} = \frac{p(M_1)}{p(M_2)} \times \frac{p(D|M_1)}{p(D|M_2)}
+\end{equation}
+The result of this formula is called \textit{posterior odds}, the posterior probability of M2 over M1 depends on the prior probability: is M2 more credible than M1 before considering the data? Another ratio is the ratio of likelihoods, sometimes called the Bayesian coefficient; how likely is the data for hypothetical M2 versus hypothetical M1? These possibilities are not the likelihood of a particular value of the parameter, but the likelihood of the entire model.
+We have to use the marginal likelihood to make a better progress.
 \section{Distributed System}
 \subsection{BONIC}
 \section{Spakslab Problem}
