@@ -132,6 +132,27 @@ in the above equation,
  indicating that we have gained some insights from the data and that our level of uncertainty about the parameter values has been lowered.
  See the Figure 1.1 for how we often see the updating from the prior distribution to a posterior distribution.
 \subsection{Marginal Likelihood}
+The marginal likelihood shows how does the model be constructed.
+From probability theory we can learn that If you integrate over the posterior distribution, you must get 1 at the last. 
+So we can write the marginal likelihood in the following form:
+\begin{equation}
+	p(D|I) = \int p(\theta|I)p(D|\theta, I)d\theta
+\end{equation}
+where $I$ represents the underlying assumptions and information, and the integral is N-dimensional, go through all the continuous parameter space, the $I$ is 
+usually ignored and the marginal likelihood can be denoted as $Z$:
+\begin{equation}
+	Z = \int p(\theta)p(D|\theta)d\theta
+\end{equation}
+when sum the discrete parameter $\theta$, it also has the following form:
+\begin{equation}
+	Z = \sum p(\theta)p(D|\theta)
+\end{equation}
+The ratio of evidence values is always called Bayes factors, calculating the value of $Z$ 
+is important for comparing different model assumptions, so the Z-value allows the results to be predicted into the future 
+because the predicted model can be compared with the current model without the need for recalculation, in short, this parameter measures how well a model fits the data.
+However, the standard algorithm such as Markov chain Monte Carlo (MCMC) are considered for posterior distribution, it cannot provide the evidence like Bayesian Inference,
+for it only gives a collection of normalised posterior, it will be a challenge to get the evidence in Bayesian analysis.
+
 % The main strength of LaTex is  mathematical typesetting.  
 
 % There is a huge amount of information about LaTex on the internet.
