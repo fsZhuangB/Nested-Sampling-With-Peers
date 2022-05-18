@@ -132,26 +132,6 @@ in the above equation,
  indicating that we have gained some insights from the data and that our level of uncertainty about the parameter values has been lowered.
  See the Figure 1.1 for how we often see the updating from the prior distribution to a posterior distribution.
 \subsection{Marginal Likelihood}
-The marginal likelihood shows how does the model be constructed.
-From probability theory we can learn that If you integrate over the posterior distribution, you must get 1 at the last. 
-So we can write the marginal likelihood in the following form:
-\begin{equation}
-	p(D|I) = \int p(\theta|I)p(D|\theta, I)d\theta
-\end{equation}
-where $I$ represents the underlying assumptions and information, and the integral is N-dimensional, go through all the continuous parameter space, the $I$ is 
-usually ignored and the marginal likelihood can be denoted as $Z$:
-\begin{equation}
-	Z = \int p(\theta)p(D|\theta)d\theta
-\end{equation}
-when sum the discrete parameter $\theta$, it also has the following form:
-\begin{equation}
-	Z = \sum p(\theta)p(D|\theta)
-\end{equation}
-The ratio of evidence values is always called Bayes factors, calculating the value of $Z$ 
-is important for comparing different model assumptions, so the Z-value allows the results to be predicted into the future 
-because the predicted model can be compared with the current model without the need for recalculation, in short, this parameter measures how well a model fits the data.
-However, the standard algorithm such as Markov chain Monte Carlo (MCMC) are considered for posterior distribution, it cannot provide the evidence like Bayesian Inference,
-for it only gives a collection of normalised posterior, it will be a challenge to get the evidence in Bayesian analysis.
 
 % The main strength of LaTex is  mathematical typesetting.  
 
@@ -161,6 +141,55 @@ for it only gives a collection of normalised posterior, it will be a challenge t
 % This document gives a lot of sample LaTex commands.  
 % The file \verb+latex-howto.tex+ in this folder also contains examples of many latex commands.
 \section{Nested Sampling} 
+
+\subsection{Model Selection with Nested Sampling}
+Consider two mutually exclusive model $M_1$ and $M_2$, $M_1$ has the parameter $\theta_1$ and $M_2$ has the 
+parameter $\theta_2$, from previous method we discussed, we can calculate the posterior distribution of $\theta_1$ :
+\begin{equation}
+	p(\theta_1|D, M_1) = \frac{p(\theta_1|M_1)p(D|\theta_1, M_1)}{p(D|M_1)}
+\end{equation}
+Same, calculate the posterior distribution of $\theta_2$ 
+\begin{equation}
+	p(\theta_2|D, M_2) = \frac{p(\theta_2|M_2)p(D|\theta_2, M_2)}{p(D|M_2)}
+\end{equation}
+For simplicity, we often calculate the ratio of posterior distributions to compare models:
+\begin{equation}
+	\frac{p(M_1|D)}{p(M_2|D)} = \frac{p(M_1)}{p(M_2)} \times \frac{p(D|M_1)}{p(D|M_2)}
+\end{equation}
+The result of this formula is called \textit{posterior odds}, the posterior probability of M2 over M1 depends on the prior probability: is M2 more credible than M1 before considering the data? Another ratio is the ratio of likelihoods, sometimes called the Bayesian coefficient; how likely is the data for hypothetical M2 versus hypothetical M1? These possibilities are not the likelihood of a particular value of the parameter, but the likelihood of the entire model.
+We have to use the marginal likelihood to make a better progress.
+\subsection{Sorting}
+In multiple dimensions, the direct integration calculation for the edge likelihood becomes unrealistic, we define the 
+ $X$ as the model's prior mass, it can be integrated in this form:
+ \begin{equation}
+	X(\lambda) = \int _{L(\theta)> \lambda}\pi(\theta)d\theta
+ \end{equation}
+ we can write the inverse function $L(X)$, the marginal likelihood \textit{i.e.} evidence will
+ be in this form:
+ \begin{equation}
+	 Z = \int ^{1}_{0} L(X) dX
+ \end{equation}
+ To get the inverse function, we can divide the prior into little particles and then sort all the particles by likelihood.
+ In geometrical terms, the function $L(X)$ is monotonically diminishing, and the likelihood decreases as the value of X increases from 0 to 1, as shown in Figure 1.1.
+From the figure1.1 we can find that when approaching the maximum likelihood, $X$ will keep decreasing.
+ \begin{center}
+	\begin{figure}[h]
+			\centering
+			\includegraphics[width=0.6\textwidth]{areaz}
+			\caption{Likelihood function with area Z.}
+			\label{fig:modes}
+	\end{figure}
+	\end{center}
+The explanation of 1.5 is that the $L(X)$ is the probability corresponding to $\lambda$ that makes the probability, $L(\theta)$, greater than $\lambda$ for $X$. 
+$L(0.4) = 0.01$ may be interpreted as a 40$\%$ probability that $\pi(\theta)$ will be greater than 0.01 for $\theta$ chosen from the prior.
+To evaluate the mapped integral in 1.5, Skilling proposed a simple trapezoidal rule by calculating 
+weighted sums:
+\begin{equation}
+	Z \approx \sum_{i=1}^{j}w_iL_i (w_i = \frac{1}{2}(X_{i-1} -X_{i+1}))
+\end{equation}
+In every iteration i, the likelihood is $L(X_i)$, and $j$ is total number of iterations.
+\subsection{Nested Sampling Algorithms}
+
 \section{Distributed System}
 \subsection{BONIC}
 \section{Spakslab Problem}
