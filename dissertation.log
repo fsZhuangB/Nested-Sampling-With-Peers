@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.5.16)  19 MAY 2022 11:07
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.5.16)  21 MAY 2022 21:24
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -108,7 +108,7 @@ File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
 \Gin@req@height=\dimen148
 \Gin@req@width=\dimen149
 )
-LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 31.
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 32.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 ) (/usr/local/texlive/2022/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
@@ -122,20 +122,20 @@ LaTeX Warning: Label `fig:modes' multiply defined.
 )
 \openout1 = `dissertation.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
  (/usr/local/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count273
@@ -158,7 +158,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 <logo.jpg, id=1, 202.94pt x 229.95pt>
 File: logo.jpg Graphic file (type jpg)
 <use logo.jpg>
-Package pdftex.def Info: logo.jpg  used on input line 48.
+Package pdftex.def Info: logo.jpg  used on input line 49.
 (pdftex.def)             Requested size: 56.9055pt x 64.47678pt.
  [1
 
@@ -183,7 +183,7 @@ Chapter 1.
 [5
 
 ]
-Overfull \hbox (12.18129pt too wide) in paragraph at lines 140--143
+Overfull \hbox (12.18129pt too wide) in paragraph at lines 141--144
 \OT1/ptm/m/n/10.95 where $\OML/cmm/m/it/10.95 I$ \OT1/ptm/m/n/10.95 rep-re-sents the un-der-ly-ing as-sump-tions and in-for-ma-tion, and the in-te-gral is N-dimensional,
  []
 
@@ -191,85 +191,87 @@ Overfull \hbox (12.18129pt too wide) in paragraph at lines 140--143
 <areaz.png, id=38, 764.8575pt x 706.64pt>
 File: areaz.png Graphic file (type png)
 <use areaz.png>
-Package pdftex.def Info: areaz.png  used on input line 198.
+Package pdftex.def Info: areaz.png  used on input line 199.
 (pdftex.def)             Requested size: 247.54149pt x 228.69563pt.
+ [7]
+<example1.png, id=45, 815.045pt x 504.88625pt>
+File: example1.png Graphic file (type png)
+<use example1.png>
+Package pdftex.def Info: example1.png  used on input line 220.
+(pdftex.def)             Requested size: 247.54149pt x 153.33908pt.
+ [8 <./areaz.png>] [9 <./example1.png>] [10
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[7] [8 <./areaz.png>]
+]
 Chapter 2.
-LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 222.
+LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 249.
 (/usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
-Overfull \hbox (17.38231pt too wide) in paragraph at lines 224--226
+Overfull \hbox (17.38231pt too wide) in paragraph at lines 251--253
 []\OT1/ptm/m/n/10.95 Mathematical sym-bols: $[] [] [] [] [] []$ ([][]\OT1/pcr/m/n/10.95 $\int\oint\sum\lim\bigcup\bigcap$[]\OT1/ptm/m/n/10.95 ). 
  []
 
 
-Overfull \hbox (57.87708pt too wide) in paragraph at lines 251--253
+Overfull \hbox (57.87708pt too wide) in paragraph at lines 278--280
 \OT1/ptm/m/n/10.95 can be re-ferred to some-where else in the text by us-ing [][]\OT1/pcr/m/n/10.95 \ref{eqn:matrix} []\OT1/ptm/m/n/10.95 or [][]\OT1/pcr/m/n/10.95 \eqref{eqn:matrix}[]\OT1/ptm/m/n/10.95 . 
  []
 
-[9
-
-]
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 271.
+[11]
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 298.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
-) [10]
-<modes.jpg, id=56, 477.7047pt x 377.2494pt>
+) [12]
+<modes.jpg, id=68, 477.7047pt x 377.2494pt>
 File: modes.jpg Graphic file (type jpg)
 <use modes.jpg>
-Package pdftex.def Info: modes.jpg  used on input line 311.
+Package pdftex.def Info: modes.jpg  used on input line 338.
 (pdftex.def)             Requested size: 247.54149pt x 195.48581pt.
- [11 <./modes.jpg>]
-Overfull \hbox (99.89442pt too wide) in paragraph at lines 349--349
+ [13 <./modes.jpg>]
+Overfull \hbox (99.89442pt too wide) in paragraph at lines 376--376
 []\OT1/pcr/m/n/10.95 \caption[title of table]{\textbf{title of table} - Overview of latexin genes.}[] 
  []
 
 
-Overfull \hbox (47.33449pt too wide) in paragraph at lines 349--349
+Overfull \hbox (47.33449pt too wide) in paragraph at lines 376--376
 []\OT1/pcr/m/n/10.95 \label{latexin_genes} % label for cross-links with \ref{latexin_genes}[] 
  []
 
-[12] [13] [14
+[14] [15] [16
 
 ]
 Chapter 3.
-[15] [16
-
-]
-Chapter 4.
 [17] [18
 
 ]
-Chapter 5.
+Chapter 4.
 [19] [20
 
-] [21] [22
+]
+Chapter 5.
+[21] [22
+
+] [23] [24
 
 ]
 Appendix A.
-[23] (./dissertation.aux)
+[25] (./dissertation.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 2706 strings out of 478268
- 39733 string characters out of 5846347
- 330643 words of memory out of 5000000
- 20887 multiletter control sequences out of 15000+600000
+ 2717 strings out of 478268
+ 39918 string characters out of 5846347
+ 330654 words of memory out of 5000000
+ 20898 multiletter control sequences out of 15000+600000
  491961 words of font info for 71 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,12n,62p,638b,287s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on dissertation.pdf (25 pages, 274880 bytes).
+ 55i,12n,62p,638b,289s stack positions out of 10000i,1000n,20000p,200000b,200000s
+{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on dissertation.pdf (27 pages, 354895 bytes).
 PDF statistics:
- 151 PDF objects out of 1000 (max. 8388607)
- 95 compressed objects within 1 object stream
+ 175 PDF objects out of 1000 (max. 8388607)
+ 108 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 

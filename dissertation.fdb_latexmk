@@ -1,6 +1,6 @@
 # Fdb version 3
-["pdflatex"] 1652929620 "/Users/bytedance/Documents/Nested-Sampling-With-Peers/dissertation.tex" "dissertation.pdf" "dissertation" 1652929621
-  "/Users/bytedance/Documents/Nested-Sampling-With-Peers/dissertation.tex" 1652929618 17501 adc9fdb272596df0df3673e90d410900 ""
+["pdflatex"] 1653139456 "/Users/bytedance/Documents/Nested-Sampling-With-Peers/dissertation.tex" "dissertation.pdf" "dissertation" 1653139458
+  "/Users/bytedance/Documents/Nested-Sampling-With-Peers/dissertation.tex" 1653139456 19485 2726bad59970d763df1619d6a4daffca ""
   "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/adobe/courier/pcrr7t.tfm" 1136768653 960 379cc0019370a9e0208a0a3f949f847a ""
@@ -32,10 +32,13 @@
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm" 1136768653 1120 8b7d695260f3cff42e636090a8002094 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb" 1248133631 30251 6afa5cb1d0204815a708a080681d4674 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1248133631 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
+  "/usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb" 1248133631 37166 8ab3487cbe3ab49ebce74c29ea2418db ""
   "/usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb" 1248133631 35469 70d41d2b9ea31d5d813066df7c99281c ""
   "/usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1248133631 35752 024fb6c41858982481f6968b5fc26508 ""
+  "/usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb" 1248133631 32734 69e00a6b65cedb993666e42eedb3d48f ""
   "/usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb" 1248133631 32726 0a1aea6fcd6468ee2cf64d891f5c43c8 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1248133631 32569 5e5ddc8df908dea60932f3c484a54c0d ""
+  "/usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb" 1248133631 32587 1788b0c1c5b39540c96f5e42ccd6dae8 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb" 1248133631 32626 4f5c1b83753b1dd3a97d1b399a005b4b ""
   "/usr/local/texlive/2022/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb" 1136849748 45758 19968a0990191524e34e1994d4a31cb6 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/type1/urw/times/utmb8a.pfb" 1136849748 44729 811d6c62865936705a31c797a1d5dada ""
@@ -77,9 +80,10 @@
   "/usr/local/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1652671616 2826443 cd457e236bf607ad333dcc6ab3b709f1 ""
   "/usr/local/texlive/2022/texmf.cnf" 1647878952 577 209b46be99c9075fd74d4c0369380e8c ""
   "areaz.png" 1652849993 101614 dcc0b266a1d92d598a785f6e30fc1d2a ""
-  "dissertation.aux" 1652929621 4052 57e445278a611834e072d8499f678ebe "pdflatex"
-  "dissertation.tex" 1652929618 17501 adc9fdb272596df0df3673e90d410900 ""
-  "dissertation.toc" 1652929621 1625 e0f395d4e7ea135da2b65108469ea27e "pdflatex"
+  "dissertation.aux" 1653139457 4357 1c1b4e26ad62028b998253acaa55fd94 "pdflatex"
+  "dissertation.tex" 1653139456 19485 2726bad59970d763df1619d6a4daffca ""
+  "dissertation.toc" 1653139457 1694 ceed05b7ec56b8bca871c561212f0267 "pdflatex"
+  "example1.png" 1653136291 98783 3a4ed063ea7ffa1a02efeff29458c87d ""
   "logo.jpg" 1652667588 20958 7f0cb3b668b7ada6ac8c939c92dcbb5d ""
   "modes.jpg" 1652667588 43944 b91c2460e28ed5e12567006c5da44c3b ""
   (generated)

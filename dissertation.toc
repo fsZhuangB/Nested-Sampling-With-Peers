@@ -5,21 +5,22 @@
 \contentsline {section}{\numberline {1.2}Nested Sampling}{6}{}%
 \contentsline {subsection}{\numberline {1.2.1}Model Selection with Nested Sampling}{6}{}%
 \contentsline {subsection}{\numberline {1.2.2}Sorting}{7}{}%
-\contentsline {subsection}{\numberline {1.2.3}Nested Sampling Algorithms}{8}{}%
-\contentsline {section}{\numberline {1.3}Distributed System}{8}{}%
-\contentsline {subsection}{\numberline {1.3.1}BONIC}{8}{}%
-\contentsline {section}{\numberline {1.4}Spakslab Problem}{8}{}%
-\contentsline {chapter}{\numberline {2}Implementation}{9}{}%
-\contentsline {subsection}{\numberline {2.0.1}Itemized lists}{10}{}%
-\contentsline {subsection}{\numberline {2.0.2}Inserting figures}{11}{}%
-\contentsline {subsection}{\numberline {2.0.3}Tables}{11}{}%
-\contentsline {subsection}{\numberline {2.0.4}How to Refer to Equations, Sections, etc}{12}{}%
-\contentsline {chapter}{\numberline {3}Methodologies and analysis}{15}{}%
-\contentsline {section}{\numberline {3.1}Methodologies}{15}{}%
-\contentsline {section}{\numberline {3.2}Analysis}{15}{}%
-\contentsline {chapter}{\numberline {4}Discussion }{17}{}%
-\contentsline {section}{\numberline {4.1}Main results}{17}{}%
-\contentsline {section}{\numberline {4.2}Discussion}{17}{}%
-\contentsline {chapter}{\numberline {5}Conclusions}{19}{}%
-\contentsline {chapter}{References}{21}{}%
-\contentsline {chapter}{\numberline {A}Some extra things}{23}{}%
+\contentsline {subsection}{\numberline {1.2.3}A easy example}{8}{}%
+\contentsline {subsection}{\numberline {1.2.4}Nested Sampling Algorithms}{8}{}%
+\contentsline {section}{\numberline {1.3}Distributed System}{9}{}%
+\contentsline {subsection}{\numberline {1.3.1}BONIC}{9}{}%
+\contentsline {section}{\numberline {1.4}Spakslab Problem}{9}{}%
+\contentsline {chapter}{\numberline {2}Implementation}{11}{}%
+\contentsline {subsection}{\numberline {2.0.1}Itemized lists}{12}{}%
+\contentsline {subsection}{\numberline {2.0.2}Inserting figures}{13}{}%
+\contentsline {subsection}{\numberline {2.0.3}Tables}{13}{}%
+\contentsline {subsection}{\numberline {2.0.4}How to Refer to Equations, Sections, etc}{14}{}%
+\contentsline {chapter}{\numberline {3}Methodologies and analysis}{17}{}%
+\contentsline {section}{\numberline {3.1}Methodologies}{17}{}%
+\contentsline {section}{\numberline {3.2}Analysis}{17}{}%
+\contentsline {chapter}{\numberline {4}Discussion }{19}{}%
+\contentsline {section}{\numberline {4.1}Main results}{19}{}%
+\contentsline {section}{\numberline {4.2}Discussion}{19}{}%
+\contentsline {chapter}{\numberline {5}Conclusions}{21}{}%
+\contentsline {chapter}{References}{23}{}%
+\contentsline {chapter}{\numberline {A}Some extra things}{25}{}%

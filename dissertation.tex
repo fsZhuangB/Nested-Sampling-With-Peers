@@ -28,6 +28,7 @@
 \setlength{\footskip}{2.36cm}
 
 
+
 \begin{document}
 \pagestyle{empty}
 
@@ -193,13 +194,14 @@ In multiple dimensions, the direct integration calculation for the edge likeliho
  In geometrical terms, the function $L(X)$ is monotonically diminishing, and the likelihood decreases as the value of X increases from 0 to 1, as shown in Figure 1.1.
 From the figure1.1 we can find that when approaching the maximum likelihood, $X$ will keep decreasing.
  \begin{center}
-	\begin{figure}[h]
+	\begin{figure}
 			\centering
 			\includegraphics[width=0.6\textwidth]{areaz}
 			\caption{Likelihood function with area Z.}
 			\label{fig:modes}
 	\end{figure}
 	\end{center}
+
 The explanation of 1.5 is that the $L(X)$ is the probability corresponding to $\lambda$ that makes the probability, $L(\theta)$, greater than $\lambda$ for $X$. 
 $L(0.4) = 0.01$ may be interpreted as a 40$\%$ probability that $\pi(\theta)$ will be greater than 0.01 for $\theta$ chosen from the prior.
 To evaluate the mapped integral in 1.5, Skilling proposed a simple trapezoidal rule by calculating 
@@ -208,7 +210,32 @@ weighted sums:
 	Z \approx \sum_{i=1}^{j}w_iL_i (w_i = \frac{1}{2}(X_{i-1} -X_{i+1}))
 \end{equation}
 In every iteration i, the likelihood is $L(X_i)$, and $j$ is total number of iterations.
+\subsection{A easy example}
+Imagine we have a model whose parameter is a single $X$, and it the parameter $X$ follows the uniform prior distribution
+$\pi(\theta)$ from 0 to 1, it also has a likelihood function $L(X)$ which is a decreasing function of X, the Figure1.2 illustrate the graph of the example,It's easy to find that in this situation, 
+the evidence will be $Z = \int ^ 1 _0L(X)DX$
+\begin{center}
+	\begin{figure}
+			\centering
+			\includegraphics[width=0.6\textwidth]{example1}
+			\caption{A simple model estimate problem with only one parameter}
+			\label{fig:example1}
+	\end{figure}
+	\end{center}
 \subsection{Nested Sampling Algorithms}
+This section will discuss the main idea of Nested Sampling, it is a Monte Carlo algorithm and not a 
+typical MCMC algorithm in technical. John Skilling proposed the algorithm specifically for approximating these marginal integrals, \textit{i.e.}, evidence, and it also generates samples from the posterior distribution. 
+In the prior distribution $\pi(\theta)$, it needs to generate $N$ \textit{particles or live points} $\theta$, just like an vector to initialize the starting state.
+To approximating the evidence, there's some important steps, if we find the points with the worst likelihood,
+always denoted by $L_{worst}$ and this is often associated with the highest $X$ value, If different particle $N$ are taken, 
+the highest $X$ value will always be close to $X = 1$ and not close to $X = 0$. 
+Skilling (2006) gives a simple treatment by estimating $X_{worst} = e^{(\frac{-1}{N})}$, 
+and we also know the probability of this point.By generating a new point from 
+the prior distribution to replace the worst $X_{worst}$, more points can be obtained, 
+and the restriction is that the likelihood of the point must be higher than $L_{worst}$.
+And in the second iteration, the estimation of the X value who has a worst particle is $e^{(\frac{-1}{N})} \times e^{(\frac{-1}{N})} = e^{(\frac{-2}{N})}$,
+Because we already know the likelihood, so we can contine the iteration.
+
 
 \section{Distributed System}
 \subsection{BONIC}
