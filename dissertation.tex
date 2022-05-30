@@ -6,6 +6,8 @@
 
 \usepackage{amsfonts, amsmath, amssymb}  
 \usepackage{times}
+\usepackage{algorithm}
+\usepackage{algorithmic}
 
 %\usepackage[backref=page,pagebackref=true,linkcolor = blue,citecolor = red]{hyperref}
 %\usepackage[backref=page]{backref}
@@ -210,6 +212,12 @@ weighted sums:
 	Z \approx \sum_{i=1}^{j}w_iL_i (w_i = \frac{1}{2}(X_{i-1} -X_{i+1}))
 \end{equation}
 In every iteration i, the likelihood is $L(X_i)$, and $j$ is total number of iterations.
+\\
+---------------------- YOU READ HERE LAST TIME ------------------------------ \\
+\\
+\\
+-------------------------- HERE IS NEW ------------------------------ \\
+\\
 \subsection{A easy example}
 Imagine we have a model whose parameter is a single $X$, and it the parameter $X$ follows the uniform prior distribution
 $\pi(\theta)$ from 0 to 1, it also has a likelihood function $L(X)$ which is a decreasing function of X, the Figure~\ref{fig:example1}. illustrate the graph of the example,It's easy to find that in this situation, 
@@ -248,13 +256,92 @@ when the iteration run $i$ times and it will generate a sequence of $\lambda _{m
 \begin{equation*}
 	\lambda _{min,1} < \lambda _{min,2} <  ... < \lambda _{min,i-1} < \lambda _{min,i}
 \end{equation*}
-because every $\omega_i$ is subset of the whole space $\omega$, so it will 
+,because every $\omega_i$ is subset of the whole space $\omega$, so it will 
 decrease continuously, so it can be viewd as as a reduction or compressing
  of the parameter space $\omega$ and the subspaces are nested within each other, 
 so we have the term \textit{nested sampling}.
+The points $i$ discarded within each loop 
+can be sampled using the MCMC algorithm by finding a random copy of a particle
+as the initial value , proposed by Skilling (2006). Nowadays, there are also studies 
+to investigate whether this approximation can be satisfied
+efficiency requirements of MCMC based on 
+the shape of the likelihood function and
+ the MCMC chosen to explore the restricted prior distribution. (Syarafana Abdul Rahman)
 
+ To estimate the evidence $Z$ we can use the equation give in 1.10, and changing 
+ the $w_i = \frac{1}{2}(X_{i-1} -X_{i+1})$ into $\lambda _{min,i}$, which means that the $Z$ can be
+ estimate like this:
+ \begin{equation}
+	\hat{Z} \approx \sum_{i=1}^{j}w_iL_i (w_i = \frac{1}{2}(X_{i-1} -X_{i+1})) = \sum_{i=1}^{j}w_i\lambda _{min,i}
+ \end{equation}
+ The value of $Z$ will be updated each time based on the results of 
+ this approximation until the algorithm terminates according to
+  some termination criterion.
+\subsection{Prior Mass, X}
+Skilling(2006) proposed a method that can decide the prior mass $X$ statistically:
+start from $X_0 = 1$, and at each step $i$, a new point $X_i$ is drawn randomly from the prior, 
+and the $X_i$ has the restriction that $X_i < X_{i-1}$, this will generate $N$ \textit{live points} that follows the 
+ \textit{Uniform(0, $X_{i-1}$)}. The $X$ can be generated like this:
+ \begin{equation}
+	 X_0 = 1, X_i = t_iX_{i-1}
+ \end{equation}
+ The $t_i$ is from the $Beta$ distribution where $Beta(N, 1)$, 
+ it's the Beta shrinkage, which lowers estimation errors,
+ and $t_i = \frac{X_i}{X_{i-1}}, where \;  t_i \in [0,1]$. 
+ The recurrence is:
+ \begin{equation}
+	P(t_i) = Nt^{N-1}_i
+ \end{equation}, and it has the expectation that $E(log(t_i)) = -\frac{1}{N}$, 
+ and also has the variance that $Var(log(t_i)) = \frac{1}{N^2}$, after $i$ iterations, 
+ and the $log^t$ are independent, a rough approximation for the prior mass is $log(x_i) = \sum_{j}^{i=1}log(t_i)$, (Skilling, 2006), 
+ and there's another estimation is  $log(x_i) \in [\frac{-(i-\sqrt{i})}{N}, \frac{-(i+\sqrt{i})}{N}]$, proposed by (Sivia and Skilling, 2006),
+ this means that The reduction of the prior mass 
+ will be linear along the logarithmic X scale.
+\subsection{Measuring}
+To find how much were we learnt from the data can be 
+measured by the negative relative entropy(Russel, 2017), also 
+Burnham and Anderson had proposed the Kullbeck Liebler divergence (Burnham and Anderson, 2001), denoted by information $H$,
+this method measures the discrepancy between two distributions, prior distribution and posterior distribution:
+\begin{equation}
+	H = \int p(\theta|D)log(\frac{p(\theta|D)}{\pi(\theta)})d\theta
+\end{equation}
+here $p(\theta|D)$ is the posterior distribution. The $\pi(\theta)$ is the prior distribution,
+and it can greatly influence the evidence $Z$, if the size of the region of prior mass was concentrated by posterior distribution.
+Skilling (2006) proposed that the region is $e^{-H}$, Naively, 
+a prior distribution that
+overlaps with the likelihood function so that the parameter values are consistent will yield less information. On the other hand, if the prior distribution and the likelihood function are concentrated in different regions, more information will be obtained.
+After looking at the data, if the prior greatly changed, more information is obtained from the data (Russel, 2017).
+If we use $L(X_i)$ to represents the likelihood $X$ at every iteration $i$, 
+the value $H$ will be like this:
+\begin{equation}
+	H = \sum _i w_iL(X_i)/Z \hspace{0.5em} log(L(X_i)/Z)
+\end{equation}
+\subsection{Nested sampling procedure}
+In the begging, the Nested Sampling Algorithm will
+generating $N$ particles $\{\theta_1, \theta_2 ,..., \theta_n\}$ from the prior, also has every likelihood 
+$\{L(\theta_1), L(\theta_2) ,..., L(\theta_n)\}$, and the lowest value is denoted by $L_{min, i}$, in every iteration $i$,
+there are $j$ steps.
 
-\section{Distributed System}
+The Nested Sampling Algorithm has the following steps:
+\begin{algorithm}
+	\caption{A}
+	\label{alg:A}
+	\begin{algorithmic}
+	\STATE {Begin with N particles $\{\theta_1, \theta_2 ,..., \theta_n\}$ from the prior.}
+	\STATE {initialise $Z=0, X_0=1,i=0$}
+	\REPEAT 
+	\STATE {for $i = \{1,2,...,j\}$}
+	\STATE {Find the particle with the current lowest likelihood values as $L_{min, i}$.}
+	\STATE {Crude estimate the value as $X_i = exp(\frac{-i}{N})$}
+	\STATE {Set $w_i = X_{i-1} - X_i$}
+	\STATE {Save the propertied $(X_i, L_{min, i})$}
+	\STATE {Increment $Z$ by $L_{min, i}w_i$}
+	\STATE {Generate a new particle from the prior to replace the point above found with $L(\theta) > L_{min, i}$}
+	\STATE {Increment the $Z$ by $N^{-1}(L(\theta_1)+...+L(\theta_N))X_j$}
+		\UNTIL{Enough iterations have been performed }
+	\end{algorithmic}
+	\end{algorithm}
+ \section{Distributed System}
 \subsection{BONIC}
 \section{Spakslab Problem}
 
