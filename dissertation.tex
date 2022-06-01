@@ -298,7 +298,7 @@ and the $X_i$ has the restriction that $X_i < X_{i-1}$, this will generate $N$ \
  this means that The reduction of the prior mass 
  will be linear along the logarithmic X scale.
 \subsection{Measuring}
-To find how much were we learnt from the data can be 
+There's another output of Nested Sampling Algorithm is information, this is to find how much were we learnt from the data can be 
 measured by the negative relative entropy(Russel, 2017), also 
 Burnham and Anderson had proposed the Kullbeck Liebler divergence (Burnham and Anderson, 2001), denoted by information $H$,
 this method measures the discrepancy between two distributions, prior distribution and posterior distribution:
@@ -307,9 +307,10 @@ this method measures the discrepancy between two distributions, prior distributi
 \end{equation}
 here $p(\theta|D)$ is the posterior distribution. The $\pi(\theta)$ is the prior distribution,
 and it can greatly influence the evidence $Z$, if the size of the region of prior mass was concentrated by posterior distribution.
-Skilling (2006) proposed that the region is $e^{-H}$, Naively, 
+Skilling (2006) proposed that the region is $e^{-H}$, naively, 
 a prior distribution that
-overlaps with the likelihood function so that the parameter values are consistent will yield less information. On the other hand, if the prior distribution and the likelihood function are concentrated in different regions, more information will be obtained.
+overlaps with the likelihood function so that the parameter values are consistent will yield less information. This can estimate the uncertainty of $log(Z) = \sqrt{H/N}$ (Skilling, 2006).
+On the other hand, if the prior distribution and the likelihood function are concentrated in different regions, more information will be obtained.
 After looking at the data, if the prior greatly changed, more information is obtained from the data (Russel, 2017).
 If we use $L(X_i)$ to represents the likelihood $X$ at every iteration $i$, 
 the value $H$ will be like this:
@@ -328,20 +329,74 @@ The Nested Sampling Algorithm has the following steps:
 	\label{alg:A}
 	\begin{algorithmic}
 	\STATE {Begin with N particles $\{\theta_1, \theta_2 ,..., \theta_n\}$ from the prior.}
-	\STATE {initialise $Z=0, X_0=1,i=0$}
+	\STATE {\textbf{initialise} $Z=0, X_0=1,i=0$}
 	\REPEAT 
 	\STATE {for $i = \{1,2,...,j\}$}
-	\STATE {Find the particle with the current lowest likelihood values as $L_{min, i}$.}
-	\STATE {Crude estimate the value as $X_i = exp(\frac{-i}{N})$}
-	\STATE {Set $w_i = X_{i-1} - X_i$}
-	\STATE {Save the propertied $(X_i, L_{min, i})$}
-	\STATE {Increment $Z$ by $L_{min, i}w_i$}
-	\STATE {Generate a new particle from the prior to replace the point above found with $L(\theta) > L_{min, i}$}
-	\STATE {Increment the $Z$ by $N^{-1}(L(\theta_1)+...+L(\theta_N))X_j$}
+	\STATE { \textbf{Find} the particle with the current lowest likelihood values as $L_{min, i}$.}
+	\STATE {\textbf{Crude} estimate the value as $X_i = exp(\frac{-i}{N})$}
+	\STATE {\textbf{Set} $w_i = X_{i-1} - X_i$}
+	\STATE {\textbf{Save} the propertied $(X_i, L_{min, i})$}
+	\STATE {\textbf{Increment} $Z$ by $L_{min, i}w_i$}
+	\STATE {\textbf{Generate} a new particle from the prior to replace the point above found with $L(\theta) > L_{min, i}$}
+	\STATE {\textbf{Increment} the $Z$ by $N^{-1}(L(\theta_1)+...+L(\theta_N))X_j$}
 		\UNTIL{Enough iterations have been performed }
 	\end{algorithmic}
 	\end{algorithm}
+\subsection{Nested Sampling Termination Criterion}
+To terminate by default, the algorithm has to set some termination criterion.
+The termination criterion will depends on the increment of the evidence, which means that 
+sum of the evidence has been found enough.
+The current found likelihood will make the evidence more significant and $Z_j$ will times a small fraction $f$:
+\begin{equation}
+	max(L(\theta _1),L(\theta _2),L(\theta _3),...,L(\theta _N))X_j< fZ_j
+\end{equation} 
+
+there's some small fraction $f$.
+In the previous section we discuss about information, this can be used as a criterion of termination.The $L_iw_i$ is related to the likelihood $L_i$ and width $w_i$, it will increase faster than 
+ the widths $w_i$ decreases, and this leads to more regions. (Skilling, 2006). So In the prior mass, the regions we are interested in is $X \approx e^{-H}$, and $X_i \approx e^{-i/H}$, this means 
+ the region from the prior found most of the posterior mass. So Skilling proposed a plausible termination criterion 
+ that when the iteration $i$ has exceeded $NH$, which means that the information $H$ times the count of 
+ live points $N$,
+ and practically the number should be set to $2NH$ (Russel, 2007). There's also a scaling constant to ensure that the 
+ nested is appropriate, we have:
+ \begin{equation}
+  ri > N_rH = \sqrt{r}HN
+ \end{equation}
+ So in this inequality, we can see that we need at least $\sqrt{r}HN$ samples to substitute (Henderson and Goggans, 2013).  
+ However, in most circumstances, the user decide when to stop the iteration, because user knows how much information 
+ do they need in the current region.
  \section{Distributed System}
+ A distributed system is a computing environment in which various components are decentralized
+among multiple computers (or other computing devices) on a network. 
+These devices work together and synchronize their efforts to get the job done more efficiently 
+than if a single device were responsible for the task.
+And a distributed system has two main characteristics:
+\begin{itemize}
+    \item Autonomous computing elements are collected together, and they are independent. In a distributed system,
+    when a computer or node has some crash will not affect other computers in the same system,
+	it will not  made known to the other components with which it communicates immediately. 
+    \item Running program in the same time are a very normal thing in the computer world, all 
+	of us doing things without disturbing others, and when it is needed, we can share our resources together.
+	The synchronization of concurrently executing programs for shared resources is also an important and recurring topic.
+\end{itemize}
+
+\subsection{Example of a distributed system}
+Google is the best example of distributed system, it is a pioneer and leader in the field of web search technology,
+and it has a very big and complicated sophisticated distributed system, such as searching service and other applications such as youtube and Google Earth.
+To design and build this sophisticated distributed system, google has to put efforts from the following points:
+\begin{enumerate}
+    \item Underlying infrastructure such as big network rooms and databases,as well as various matching settings such as radiators
+	Google has numerous data centers scattered around the world. 
+	At least 12 significant Google data center installations are located in the United States. 
+	The largest known centers are located in The Dalles, Oregon; Atlanta, Georgia; Reston, Virginia; Lenoir, North Carolina; and Moncks Corner, South Carolina (Wikipedia).
+    \item To support hundreds of millions files fast and stable reading, writing and searching 
+       google has to optimize the distributed file system in many ways such as writing better programs.
+    \item To synchronize the files' reading and writing, it also needs a lock system.
+    \item A programming model to supports managing very large parallel and distributed computations on the underlying physical infrastructure.
+\end{enumerate}
+
+\subsection{Distributed system models}
+The fundamental models 
 \subsection{BONIC}
 \section{Spakslab Problem}
 
