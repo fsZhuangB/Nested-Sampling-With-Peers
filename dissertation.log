@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.8.20)  1 JUN 2022 21:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.8.20)  6 JUN 2022 22:45
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -130,10 +130,40 @@ File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen144
 \Gin@req@width=\dimen145
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count194
+\lst@gtempboxa=\box49
+\lst@token=\toks25
+\lst@length=\count195
+\lst@currlwidth=\dimen146
+\lst@column=\count196
+\lst@pos=\count197
+\lst@lostspace=\dimen147
+\lst@width=\dimen148
+\lst@newlines=\count198
+\lst@lineno=\count199
+\lst@maxwidth=\dimen149
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
+\c@lstnumber=\count266
+\lst@skipnumbers=\count267
+\lst@framebox=\box50
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2020/03/24 1.8d listings configuration
+))
+Package: listings 2020/03/24 1.8d (Carsten Heinz)
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2019/11/23 v1.2a Standard LaTeX Color (DPC)
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: pdftex.def on input line 147.
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2020/03/24 1.8d listings language file
 ) (/usr/local/texlive/2020/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
 File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
-\l__kernel_color_stack_int=\count194
-\l__pdf_internal_box=\box49
+\l__kernel_color_stack_int=\count268
+\l__pdf_internal_box=\box51
 ) (/Users/fszhuangb/Downloads/nested sampling with peers/Nested-Sampling-With-Peers/dissertation.aux
 
 LaTeX Warning: Label `fig:modes' multiply defined.
@@ -141,46 +171,47 @@ LaTeX Warning: Label `fig:modes' multiply defined.
 )
 \openout1 = `dissertation.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 34.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 57.
  (/usr/local/texlive/2020/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 ) (/usr/local/texlive/2020/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count195
-\scratchdimen=\dimen146
-\scratchbox=\box50
-\nofMPsegments=\count196
-\nofMParguments=\count197
-\everyMPshowfont=\toks25
-\MPscratchCnt=\count198
-\MPscratchDim=\dimen147
-\MPnumerator=\count199
-\makeMPintoPDFobject=\count266
-\everyMPtoPDFconversion=\toks26
+\scratchcounter=\count269
+\scratchdimen=\dimen150
+\scratchbox=\box52
+\nofMPsegments=\count270
+\nofMParguments=\count271
+\everyMPshowfont=\toks26
+\MPscratchCnt=\count272
+\MPscratchDim=\dimen151
+\MPnumerator=\count273
+\makeMPintoPDFobject=\count274
+\everyMPtoPDFconversion=\toks27
 ) (/usr/local/texlive/2020/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
  (/usr/local/texlive/2020/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
+\c@lstlisting=\count275
 <logo.jpg, id=1, 202.94pt x 229.95pt>
 File: logo.jpg Graphic file (type jpg)
 <use logo.jpg>
-Package pdftex.def Info: logo.jpg  used on input line 51.
+Package pdftex.def Info: logo.jpg  used on input line 74.
 (pdftex.def)             Requested size: 56.9055pt x 64.47678pt.
  [1
 
@@ -205,7 +236,7 @@ Chapter 1.
 [5
 
 ]
-Overfull \hbox (12.18129pt too wide) in paragraph at lines 143--146
+Overfull \hbox (12.18129pt too wide) in paragraph at lines 166--169
 \OT1/ptm/m/n/10.95 where $\OML/cmm/m/it/10.95 I$ \OT1/ptm/m/n/10.95 rep-re-sents the un-der-ly-ing as-sump-tions and in-for-ma-tion, and the in-te-gral is N-dimensional,
  []
 
@@ -213,25 +244,25 @@ Overfull \hbox (12.18129pt too wide) in paragraph at lines 143--146
 <areaz.png, id=38, 764.8575pt x 706.64pt>
 File: areaz.png Graphic file (type png)
 <use areaz.png>
-Package pdftex.def Info: areaz.png  used on input line 201.
+Package pdftex.def Info: areaz.png  used on input line 224.
 (pdftex.def)             Requested size: 247.54149pt x 228.69563pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 213--221
+Underfull \hbox (badness 10000) in paragraph at lines 236--244
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 213--221
+Underfull \hbox (badness 10000) in paragraph at lines 236--244
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 213--221
+Underfull \hbox (badness 10000) in paragraph at lines 236--244
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 213--221
+Underfull \hbox (badness 10000) in paragraph at lines 236--244
 
  []
 
@@ -239,86 +270,127 @@ Underfull \hbox (badness 10000) in paragraph at lines 213--221
 <example1.png, id=45, 815.045pt x 504.88625pt>
 File: example1.png Graphic file (type png)
 <use example1.png>
-Package pdftex.def Info: example1.png  used on input line 228.
+Package pdftex.def Info: example1.png  used on input line 251.
 (pdftex.def)             Requested size: 247.54149pt x 153.33908pt.
  [8 </Users/fszhuangb/Downloads/nested sampling with peers/Nested-Sampling-With-Peers/areaz.png>] [9 </Users/fszhuangb/Downloads/nested sampling with peers/Nested-Sampling-With-Peers/example1.png>]
-Overfull \hbox (4.39908pt too wide) in paragraph at lines 294--300
+Overfull \hbox (4.39908pt too wide) in paragraph at lines 317--323
 \OT1/ptm/m/n/10.95 , and it has the ex-pec-ta-tion that $\OML/cmm/m/it/10.95 E\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 log\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 t[]\OT1/cmr/m/n/10.95 )) = \OMS/cmsy/m/n/10.95 ^^@[]$\OT1/ptm/m/n/10.95 , and also has the vari-ance that $\OML/cmm/m/it/10.95 Var\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 log\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 t[]\OT1/cmr/m/n/10.95 )) =
  []
 
 [10] [11]
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 375.
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 398.
  (/usr/local/texlive/2020/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
-) [12] [13] [14
+) [12] [13]
+<clien-server.png, id=70, 840.13875pt x 353.32pt>
+File: clien-server.png Graphic file (type png)
+<use clien-server.png>
+Package pdftex.def Info: clien-server.png  used on input line 449.
+(pdftex.def)             Requested size: 247.54149pt x 104.10449pt.
+<peer-to-peer.png, id=71, 433.62pt x 435.6275pt>
+File: peer-to-peer.png Graphic file (type png)
+<use peer-to-peer.png>
+Package pdftex.def Info: peer-to-peer.png  used on input line 469.
+(pdftex.def)             Requested size: 247.54149pt x 248.68913pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[14 </Users/fszhuangb/Downloads/nested sampling with peers/Nested-Sampling-With-Peers/clien-server.png>] [15 </Users/fszhuangb/Downloads/nested sampling with peers/Nested-Sampling-With-Peers/peer-to-peer.png>]
+LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 514.
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/psnfss/ot1pcr.fd
+File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
+) [16] [17]
+<socket.png, id=88, 389.455pt x 356.33125pt>
+File: socket.png Graphic file (type png)
+<use socket.png>
+Package pdftex.def Info: socket.png  used on input line 612.
+(pdftex.def)             Requested size: 247.54149pt x 226.4853pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [18] [19 </Users/fszhuangb/Downloads/nested sampling with peers/Nested-Sampling-With-Peers/socket.png>]
+LaTeX Font Info:    Trying to load font information for OMS+ptm on input line 649.
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/psnfss/omsptm.fd
+File: omsptm.fd 
+)
+LaTeX Font Info:    Font shape `OMS/ptm/b/n' in size <10.95> not available
+(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 649.
+<json.png, id=96, 441.65pt x 78.2925pt>
+File: json.png Graphic file (type png)
+<use json.png>
+Package pdftex.def Info: json.png  used on input line 661.
+(pdftex.def)             Requested size: 247.54149pt x 43.8829pt.
+ [20 </Users/fszhuangb/Downloads/nested sampling with peers/Nested-Sampling-With-Peers/json.png>] [21] [22
 
 ]
 Chapter 2.
-LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 408.
-(/usr/local/texlive/2020/texmf-dist/tex/latex/psnfss/ot1pcr.fd
-File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
-)
-Overfull \hbox (17.38231pt too wide) in paragraph at lines 410--412
+
+Overfull \hbox (17.38231pt too wide) in paragraph at lines 707--709
 []\OT1/ptm/m/n/10.95 Mathematical sym-bols: $[] [] [] [] [] []$ ([][]\OT1/pcr/m/n/10.95 $\int\oint\sum\lim\bigcup\bigcap$[]\OT1/ptm/m/n/10.95 ). 
  []
 
-
-Overfull \hbox (57.87708pt too wide) in paragraph at lines 437--439
+[23]
+Overfull \hbox (57.87708pt too wide) in paragraph at lines 734--736
 \OT1/ptm/m/n/10.95 can be re-ferred to some-where else in the text by us-ing [][]\OT1/pcr/m/n/10.95 \ref{eqn:matrix} []\OT1/ptm/m/n/10.95 or [][]\OT1/pcr/m/n/10.95 \eqref{eqn:matrix}[]\OT1/ptm/m/n/10.95 . 
  []
 
-[15] [16]
-<modes.jpg, id=80, 477.7047pt x 377.2494pt>
+[24]
+<modes.jpg, id=115, 477.7047pt x 377.2494pt>
 File: modes.jpg Graphic file (type jpg)
 <use modes.jpg>
-Package pdftex.def Info: modes.jpg  used on input line 497.
+Package pdftex.def Info: modes.jpg  used on input line 794.
 (pdftex.def)             Requested size: 247.54149pt x 195.48581pt.
- [17 </Users/fszhuangb/Downloads/nested sampling with peers/Nested-Sampling-With-Peers/modes.jpg>]
-Overfull \hbox (99.89442pt too wide) in paragraph at lines 535--535
+ [25 </Users/fszhuangb/Downloads/nested sampling with peers/Nested-Sampling-With-Peers/modes.jpg>]
+Overfull \hbox (99.89442pt too wide) in paragraph at lines 832--832
 []\OT1/pcr/m/n/10.95 \caption[title of table]{\textbf{title of table} - Overview of latexin genes.}[] 
  []
 
 
-Overfull \hbox (47.33449pt too wide) in paragraph at lines 535--535
+Overfull \hbox (47.33449pt too wide) in paragraph at lines 832--832
 []\OT1/pcr/m/n/10.95 \label{latexin_genes} % label for cross-links with \ref{latexin_genes}[] 
  []
 
-[18] [19] [20
+[26] [27] [28
 
 ]
 Chapter 3.
-[21] [22
+[29] [30
 
 ]
 Chapter 4.
-[23] [24
+[31] [32
 
 ]
 Chapter 5.
-[25] [26
+[33] [34
 
-] [27] [28
+] [35] [36
 
 ]
 Appendix A.
-[29] (/Users/fszhuangb/Downloads/nested sampling with peers/Nested-Sampling-With-Peers/dissertation.aux)
+[37] (/Users/fszhuangb/Downloads/nested sampling with peers/Nested-Sampling-With-Peers/dissertation.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 2746 strings out of 480608
- 36494 string characters out of 5903630
- 273417 words of memory out of 5000000
- 18597 multiletter control sequences out of 15000+600000
- 555040 words of font info for 67 fonts, out of 8000000 for 9000
+ 4575 strings out of 480608
+ 60737 string characters out of 5903630
+ 512471 words of memory out of 5000000
+ 20401 multiletter control sequences out of 15000+600000
+ 556317 words of font info for 71 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 30i,12n,27p,648b,415s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on "/Users/fszhuangb/Downloads/nested sampling with peers/Nested-Sampling-With-Peers/dissertation.pdf" (31 pages, 363701 bytes).
+ 30i,12n,40p,648b,1756s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on "/Users/fszhuangb/Downloads/nested sampling with peers/Nested-Sampling-With-Peers/dissertation.pdf" (39 pages, 806316 bytes).
 PDF statistics:
- 173 PDF objects out of 1000 (max. 8388607)
- 117 compressed objects within 2 object streams
+ 212 PDF objects out of 1000 (max. 8388607)
+ 139 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 41 words of extra memory for PDF output out of 10000 (max. 10000000)
 

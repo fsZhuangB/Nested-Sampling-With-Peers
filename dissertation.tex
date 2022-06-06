@@ -14,6 +14,29 @@
 
 
 \usepackage{graphicx}
+\usepackage{listings}
+\usepackage{color}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{frame=tb,
+  language=Java,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3
+}
 \DeclareGraphicsExtensions{.pdf,.png,.jpg}
 
 
@@ -396,13 +419,287 @@ To design and build this sophisticated distributed system, google has to put eff
 \end{enumerate}
 
 \subsection{Distributed system models}
-The fundamental models 
-\subsection{BONIC}
+There're three type of models that can provide an abstract of distributed system:
+\begin{enumerate}
+	\item \textit{Physical models} show an aspect of distributed system from hardware, 
+	explains their underlying connected network and data systems.
+	\item \textit{Architectural models} show an aspect from computational elements, 
+	computational elements are a single computer or a collection of computers supported by an appropriate network interconnection.
+	\item \textit{Fundamental models} To examine individual aspects of distributed systems, we take an abstract perspective, it includes
+	three kinds of models: interaction models, which consider the structure and sequencing of the communication between the elements of the system; 
+	failure models, which consider the ways in which a system may fail to operate correctly and security models, which consider how the system is protected against attempts to interfere with its correct operation or to steal its data (George, 2006).
+
+\end{enumerate}
+In the individual process environment, most of computers use client-server architecture, it's a very simple 
+but very important architecture in the history and also use in today's world, 
+the process in this architecture is a role of client or server, in particular, 
+client processes communicate with individual server processes in potentially independent hosts to 
+ask for the  resources like images, videos they manage.
+Also, a server can also be clients and asks for resources from other servers, for example a search is not only 
+a server, but also a client, for the reason it have to respond queries from users,
+which means clients,  then it needs to run crawlers that act as clients of other web servers.
+Responding to user queries can be called server task, and requesting other web servers is the client task,
+these two tasks are independent with each other, so they can run concurrently.
+
+The figure~\ref{fig:client-server} shows the architecture of client-server modes.
+
+\begin{center}
+\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.6\textwidth]{clien-server}
+		\caption{Client-server architecture}
+		\label{fig:client-server}
+\end{figure}
+\end{center}
+Although client-server architecture offers a straightforward and relatively simple way to share data 
+and manage other resources, it is poorly scalable. 
+The server address is relatively single, so it is difficult to expand the computer capacity and network bandwidth.
+In the peer-to-peer structure, 
+all processes are of the same status and no distinction is made between client and server processes or the computers on which they run. 
+In fact, all participating processes run the same programs and provide the same set of APIs to each other.
+API stands for  application programming interface, it's a connection between computers 
+or between computer processes.
+Peer-to-peer architecture can lead to a very useful result that the resources will grow with the number of users. 
+This is mainly due to the fact that peer-to-peer was designed with the idea that the network and computing resources owned by the users of a service 
+could also be used to support that service.
+The figure~\ref{fig:peer-to-peer} shows the architecture of client-server modes.
+\begin{center}
+	\begin{figure}[h]
+			\centering
+			\includegraphics[width=0.6\textwidth]{peer-to-peer}
+			\caption{Peer-to-peer architecture}
+			\label{fig:peer-to-peer}
+	\end{figure}
+	\end{center}
+	Peer-to-peer architectures can utilize the resources (hardware resources, software resources, data) in almost any computer in the system to accomplish a specific task.
+	Here's the advantages of peer-to-peer architecture:
+	\begin{enumerate}
+		\item 	Better parallel processing capabilities compared to Client-server architecture, 
+		which gets slower and slower as more and more clients are added, 
+		but p2p networks do not change very much, 
+		and all clients can provide resources, 
+		including bandwidth, storage space, and computing power.
+		\item 	No central server, relying on user groups (peers) to exchange information, 
+		reducing network transmission nodes
+		\item 	No need to invest a lot of money in server software and hardware.
+
+	\end{enumerate}
+	Also, there's some disadvantages of peer-to-peer:
+	\begin{enumerate}
+		\item More complex architecture, NAT isolation usually exists between nodes and direct communication is not possible, resulting in the need for additional pathway construction process and coordinated management of resources for each node
+		\item P2P nodes are spread throughout the Internet, bringing monitoring problems to developers, organizations, and governments
+		\item Used in large-scale networks, resource sharing is disorderly and difficult to manage
+		\item Lower security
+	\end{enumerate}
+\subsection{Interprocess communication: sockets}
+There are various methods of inter-process communication under unix/linux system, such as
+\begin{itemize}
+    \item Anonymous pipeline (pipe): communication between parent and child processes
+    \item Named pipes (fifo): communication with unrelated processes
+    \item Shared memory (shm): can communicate with unrelated processes, need to handle their own process synchronization, such as with semaphore.
+	\item Unix domain sockets (unix socket): can communicate with unassociated processes, using the socket interface.
+	\item Network socket: can communicate across hosts, using the socket interface.
+\end{itemize}
+Sockets is one of the most important communication style in distributed system,
+A socket is an abstraction of an endpoint for bi-directional communication between application processes on different hosts in a network. A socket is one end of the communication between processes on the network and provides a mechanism for application layer processes to exchange data using network protocols.
+e In terms of its position, a socket is connected to the application process and to the network protocol stack, and is the interface through which the application communicates with the network protocol and interacts with the network protocol stack. 
+The sockets can be defined as:
+\begin{equation}
+	sockets = protocol//ip:ports
+\end{equation}
+
+The \textit{C++} offers many APIs for socket programming:
+\begin{enumerate}
+	\item \textbf{socket} Use the function  to create a socket:
+		\begin{lstlisting}
+			int sockfd = socket(domain, type, protocol)
+		\end{lstlisting}
+		
+ 	\item \textbf{bind} function after create the socket, the \textbf{bind} function 
+	 binds the socket to the address and port number all together.
+	 \begin{lstlisting}
+		int bind(int sockfd, const struct sockaddr *addr, 
+		socklen_t addrlen);
+	 \end{lstlisting}
+	 \item \textbf{listen} the server will listen to the ports and waiting for client's connect request.
+	 \begin{lstlisting}
+		int listen(int sockfd, int backlog);
+	 \end{lstlisting}
+	 \item \textbf{accept} The textbf{accept} function is called by the TCP server to return the next completed connection from the completed connections queue. If the completed connections queue is empty, then the process is put to sleep (assuming the default blocking mode of socket silence)
+	 \begin{lstlisting}
+		int listen(int sockfd, int backlog);
+		int new_socket= accept(int sockfd, struct sockaddr *addr, socklen_t *addrlen);
+	 \end{lstlisting}
+	 \item \textbf{connect} The \textbf{connect} function is usually used to establish a tcp connection on the client side.
+	 \begin{lstlisting}
+		int connect (int sockfd,struct sockaddr * serv_addr,int addrlen);
+	 \end{lstlisting}
+\end{enumerate}
+Here is a basic of network programming procedure using sockets APIs in \textit{C++}:
+
+\begin{lstlisting}
+	// server.cpp
+    // socket
+    int listenfd = socket(AF_INET, SOCK_STREAM, 0);
+    // bind
+    struct sockaddr_in addr;
+    addr.sin_family = AF_INET;
+    addr.sin_port = htons(8000);
+    addr.sin_addr.s_addr = INADDR_ANY;
+    if (bind(listenfd, (struct sockaddr*)&addr, sizeof(addr)) == -1) {
+        std::cout << "Error: bind" << std::endl;
+        return 0;
+    }
+    // listen
+    if(listen(listenfd, 5) == -1) {
+        std::cout << "Error: listen" << std::endl;
+        return 0;
+    }
+    // accept
+    int conn;
+    char clientIP[INET_ADDRSTRLEN] = "";
+    struct sockaddr_in clientAddr;
+    socklen_t clientAddrLen = sizeof(clientAddr);
+    while (true) {
+        conn = accept(listenfd, (struct sockaddr*)&clientAddr, &clientAddrLen);
+        inet_ntop(AF_INET, &clientAddr.sin_addr, clientIP, INET_ADDRSTRLEN);
+
+        char buf[255];
+        while (true) {
+            memset(buf, 0, sizeof(buf));
+            int len = recv(conn, buf, sizeof(buf), 0);
+            buf[len] = '\0';
+
+            std::cout << buf << std::endl;
+            send(conn, buf, len, 0);
+        }
+        
+        close(conn);
+    }
+    close(listenfd);
+    return 0;
+	\end{lstlisting}
+
+\begin{lstlisting}
+// client.cpp
+    // socket
+    int client = socket(AF_INET, SOCK_STREAM, 0);
+
+    // connect
+    struct sockaddr_in serverAddr;
+    serverAddr.sin_family = AF_INET;
+    serverAddr.sin_port = htons(8000);
+    serverAddr.sin_addr.s_addr = inet_addr("127.0.0.1");
+    if (connect(client, (struct sockaddr*)&serverAddr, sizeof(serverAddr)) < 0) {
+        std::cout << "Error: connect" << std::endl;
+        return 0;
+    }
+    std::cout << "...connect" << std::endl;
+    char data[255];
+    char buf[255];
+    while (true) {
+        send(client, data, strlen(data), 0);
+        int len = recv(client, buf, sizeof(buf), 0);
+    }
+    close(client);
+    return 0;
+\end{lstlisting}
+The figure~\ref{fig:socket} shows diagram of client-server modes in socket programming, which needs many procedure to communicate with 
+other computers.
+\begin{center}
+	\begin{figure}[h]
+			\centering
+			\includegraphics[width=0.6\textwidth]{socket}
+			\caption{Socket diagram}
+			\label{fig:socket}
+	\end{figure}
+	\end{center}
+\subsection{JavaScript Object Notation: (JSON)}
+\textit{JSON} is a text format for data exchange, the current standard is ECMA-404, 
+Although JSON is derived from the JavaScript language, it is a data format that can be used in any programming language. There are formats with similar functionality, such as XML and YAML, of which JSON has the simplest syntax.
+
+For example, when a dynamic web page wants to get data from the server, the server looks up the data from the database and converts it into JSON text format:
+\begin{lstlisting}
+	{
+    "title": "Distributed System",
+    "subtitle": "How to design better distributed system",
+    "author": [
+        "Feishuang Wang",
+        "Json Jack",
+    ],
+    "year": 2010,
+    "weight": 1.6,
+    "hardcover": false,
+    "publisher": {
+        "Company": "Education",
+        "Country": "China"
+    },
+    "blog": null
+}
+\end{lstlisting}
+The scripting code of the web page can then parse this JSON text into internal data structures for use.
+
+As you can see from this example, JSON is a tree structure, while JSON contains only 6 data types.
+\begin{enumerate}
+	\item null: it represents by \textbf{null}.
+ \item boolean: it represents by \textbf{true} or \textbf{false}.
+ \item number: it usually represents by float numbers.
+ \item string: it represents by \textbf{`...'}
+ \item array: it represents by \textbf{[...]}
+ \item object: it represents by \textbf{\{...\}}
+\end{enumerate}
+JSON parsing fulfills 3 main requirements.
+\begin{itemize}
+	\item Parse JSON text into a tree data structure (parse).
+	\item Provide an interface to access the data structure (access).
+ \item Convert the data structure into JSON text (stringify).
+\end{itemize}
+The figure~\ref{fig:json} the process of parsing a json object:
+\begin{center}
+	\begin{figure}[h]
+			\centering
+			\includegraphics[width=0.6\textwidth]{json}
+			\caption{Json parsing}
+			\label{fig:json}
+	\end{figure}
+	\end{center} 
+There're many advantages to use json as a format to excahnge data:
+\begin{itemize}
+	\item Compared with XML, JSON is more concise, we can see the content at a glance, easy to check and troubleshoot.
+	\item JSON is lighter, more efficient in writing, transferring, and parsing.
+	\item JSON uses compression technology in the transmission process, which saves broadband.
+	\item Numerous language support, such as javascript, python, C, C++ and other mainstream languages are supported.
+\end{itemize}
+
+\subsection{Berkeley Open Infrastructure for Network Computing: BOINC}
+\textit{BOINC} is BOINC is one of the leading distributed computing platforms, 
+a decentralized computing system developed by the Department of Computer Science at the University of California, Berkeley. 
+Originally designed for the \textit{SETI@home} project, this project is 
+SETI stands for Search for Extraterrestrial Intelligence. What this project does is to analyze the data observed by radio telescopes around the world to find three equally spaced convex waves. It is not easy to observe such convex waves because the cosmic waves are very weak and are strongly influenced by the electromagnetic properties of the universe itself.
+
+This kind of task is very suitable for distributed computing, and SETI joined BOINC in the sixth year after the project was established. The nodes that contribute computational power around the world are allowed to join together to find it.
+It mainly for research institutions to provide a distributed computing platform. BOINC was developed because many research institutions lack funds, but many research projects require very large computation. So we want to use the distributed computing method to handle large amount of data.
+The \textit{BOINC} has many excellent ideas for developers to learn:
+\begin{itemize}
+	\item Provide dedicated support for the development of advanced algorithms.
+ \item Applying artificial intelligence techniques to analyze and process gravitational wave big data, developing more efficient and intelligent algorithms for gravitational wave data analysis, and increasing the possibility of identifying theoretically unknown gravitational waves.
+ \item Open up gravitational wave astronomical data and hold challenges to attract companies and citizen scientists to participate and use group intelligence to overcome the problem.
+\end{itemize}
 \section{Spakslab Problem}
 
 \chapter{Implementation}
-We first show  some simple examples of 
-mathematical formulae using latex typesetting.
+\section{The classic nested sampling implementation}
+In this section, i implement the classic nested samping algorithm, 
+\subsection{Implement the sampler}
+\subsection{Sqlite database}
+
+
+\section{Flask webserver}
+\section{Query from the server}
+\section{Calculating the MSE}
+
+
+
 
 \begin{enumerate}
 \item The basic functions: $\cos(x),  \sin(x),   \ln(x) $,  (\verb+$\cos(x),\sin(x),\ln(x)$+). 
