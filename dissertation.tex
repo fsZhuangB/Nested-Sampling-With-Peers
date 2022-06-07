@@ -686,8 +686,59 @@ The \textit{BOINC} has many excellent ideas for developers to learn:
  \item Open up gravitational wave astronomical data and hold challenges to attract companies and citizen scientists to participate and use group intelligence to overcome the problem.
 \end{itemize}
 \section{Spakslab Problem}
+Spike and slab is a more graphic description of a prior.
+For a random varible $X$, a spike and slab prior will either gets some value $v$, which can
+be called \textit{spike}, or gets some other prior $p_slab(x)$, which will be called \textit{slab}.
+The figure~\ref{fig:spike-slab} shows the spike and slab prior:
+\begin{center}
+	\begin{figure}[h]
+			\centering
+			\includegraphics[width=0.6\textwidth]{spike-slab}
+			\caption{A view of the spike and slab prior in 2 dimensions. The higher peak is the "spike" and the lower peak is the "slab"}
+			\label{fig:spike-slab}
+	\end{figure}
+	\end{center} 
+The spike and slab prior is sparsity inducing in the case that $v=0$ and $X = 0$,
+it will give a principled alternative to sparsity-inducing regularisers.
+It is used to do Bayesian sparse learning, 
+to obtain a sparse model from which further tasks such as feature selection and model compression can be done.
+From Bayesian linear regression to Bayesian neural networks, any probabilistic model in a Bayesian framework can be used in spike and slab prior.
+The spike and slab correspond to the sampling process that
+\begin{enumerate}
+	\item For each parameter $w_i$, we first assign a binary indicator $s_i$, which is sampled from a Bernoulli distribution $Bern(p_0)$ and has only two possible values, 0 or 1.
+ \item If $s_i=1$, then we continue to draw from a relatively normal and flat Gaussian distribution, such as $N(0,1)$,  at which point the value of $w_i$ has a high probability of not being 0. 
+ Conversely, if $s_i=0$ , then we continue to draw from an abnormal and steep Gaussian distribution, such as $N(0,0.000000...1)$ , at which point the value of $w_i$ - is very close to 0.
+The probability of the value of $w_i$ is very close to 0, and the effect of sparsity is achieved. 
+\end{enumerate}
 
-\chapter{Implementation}
+	
+The variance of the spike and slab distribution is $0.000.... .001$, 
+but its theoretical value is actually the limit of convergence to 0, 
+so it is actually a Dirac delta function $\delta(w_i)$ ($y=1$ except at $x=0$, $y=0$ at other points).
+As shown in the figure~\ref{fig:spike-slab-sampling}.
+\begin{center}
+	\begin{figure}[h]
+			\centering
+			\includegraphics[width=0.6\textwidth]{spike-slab-sampling}
+			\caption{A sampling proess of spike and slab.}
+			\label{fig:spike-slab-sampling}
+	\end{figure}
+	\end{center}
+
+	The above steps can be abstracted into the formula:
+	\begin{equation}
+		P(w_j)=P(s_j)P(w_j|s_j)=Bern(s_j|p_0)(s_jN(w_j|0,\sigma_0^2) + (1-s_j)\delta (w_j))
+	\end{equation}
+	where $p_0,\sigma_0$ is all hyperparameters. 
+	Multiply this in front of your data-likelihood $P(D|W)$ 
+	to get a joint distribution of probability models $P(S)P(W|S)P(D|W)$.
+
+	Compared to sparse methods such as L1 loss,
+	spike and slab gives a more precise and fine-grained sparse modeling that 
+	we can place a unique "sparse prior $p_0$" for each parameter in the model, 
+	and also obtain a "sparse probability $c(p_j)$" after extrapolation that describes the probability of each parameter being selected.
+	However, some of the most commonly used inference frameworks, such as variational inference and Expectation propogation, cannot be used directly under this kind of prior due to the form of the spike and slab prior (with discontinuous delta functions and mixed Gaussian forms).
+	\chapter{Implementation}
 \section{The classic nested sampling implementation}
 In this section, i implement the classic nested samping algorithm, 
 \subsection{Implement the sampler}

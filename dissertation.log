@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.8.20)  6 JUN 2022 22:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.8.20)  7 JUN 2022 09:04
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -325,72 +325,92 @@ File: json.png Graphic file (type png)
 <use json.png>
 Package pdftex.def Info: json.png  used on input line 661.
 (pdftex.def)             Requested size: 247.54149pt x 43.8829pt.
- [20 </Users/fszhuangb/Downloads/nested sampling with peers/Nested-Sampling-With-Peers/json.png>] [21] [22
+ [20 </Users/fszhuangb/Downloads/nested sampling with peers/Nested-Sampling-With-Peers/json.png>]
+<spike-slab.png, id=102, 618.31pt x 509.905pt>
+File: spike-slab.png Graphic file (type png)
+<use spike-slab.png>
+Package pdftex.def Info: spike-slab.png  used on input line 696.
+(pdftex.def)             Requested size: 247.54149pt x 204.14511pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[21]
+<spike-slab-sampling.png, id=106, 451.6875pt x 160.6pt>
+File: spike-slab-sampling.png Graphic file (type png)
+<use spike-slab-sampling.png>
+Package pdftex.def Info: spike-slab-sampling.png  used on input line 722.
+(pdftex.def)             Requested size: 247.54149pt x 88.01659pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[22 </Users/fszhuangb/Downloads/nested sampling with peers/Nested-Sampling-With-Peers/spike-slab.png>] [23 </Users/fszhuangb/Downloads/nested sampling with peers/Nested-Sampling-With-Peers/spike-slab-sampling.png>] [24
 
 ]
 Chapter 2.
 
-Overfull \hbox (17.38231pt too wide) in paragraph at lines 707--709
+Overfull \hbox (17.38231pt too wide) in paragraph at lines 758--760
 []\OT1/ptm/m/n/10.95 Mathematical sym-bols: $[] [] [] [] [] []$ ([][]\OT1/pcr/m/n/10.95 $\int\oint\sum\lim\bigcup\bigcap$[]\OT1/ptm/m/n/10.95 ). 
  []
 
-[23]
-Overfull \hbox (57.87708pt too wide) in paragraph at lines 734--736
+[25]
+Overfull \hbox (57.87708pt too wide) in paragraph at lines 785--787
 \OT1/ptm/m/n/10.95 can be re-ferred to some-where else in the text by us-ing [][]\OT1/pcr/m/n/10.95 \ref{eqn:matrix} []\OT1/ptm/m/n/10.95 or [][]\OT1/pcr/m/n/10.95 \eqref{eqn:matrix}[]\OT1/ptm/m/n/10.95 . 
  []
 
-[24]
-<modes.jpg, id=115, 477.7047pt x 377.2494pt>
+[26]
+<modes.jpg, id=125, 477.7047pt x 377.2494pt>
 File: modes.jpg Graphic file (type jpg)
 <use modes.jpg>
-Package pdftex.def Info: modes.jpg  used on input line 794.
+Package pdftex.def Info: modes.jpg  used on input line 845.
 (pdftex.def)             Requested size: 247.54149pt x 195.48581pt.
- [25 </Users/fszhuangb/Downloads/nested sampling with peers/Nested-Sampling-With-Peers/modes.jpg>]
-Overfull \hbox (99.89442pt too wide) in paragraph at lines 832--832
+ [27 </Users/fszhuangb/Downloads/nested sampling with peers/Nested-Sampling-With-Peers/modes.jpg>]
+Overfull \hbox (99.89442pt too wide) in paragraph at lines 883--883
 []\OT1/pcr/m/n/10.95 \caption[title of table]{\textbf{title of table} - Overview of latexin genes.}[] 
  []
 
 
-Overfull \hbox (47.33449pt too wide) in paragraph at lines 832--832
+Overfull \hbox (47.33449pt too wide) in paragraph at lines 883--883
 []\OT1/pcr/m/n/10.95 \label{latexin_genes} % label for cross-links with \ref{latexin_genes}[] 
  []
 
-[26] [27] [28
+[28] [29] [30
 
 ]
 Chapter 3.
-[29] [30
-
-]
-Chapter 4.
 [31] [32
 
 ]
-Chapter 5.
+Chapter 4.
 [33] [34
 
-] [35] [36
+]
+Chapter 5.
+[35] [36
+
+] [37] [38
 
 ]
 Appendix A.
-[37] (/Users/fszhuangb/Downloads/nested sampling with peers/Nested-Sampling-With-Peers/dissertation.aux)
+[39] (/Users/fszhuangb/Downloads/nested sampling with peers/Nested-Sampling-With-Peers/dissertation.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 4575 strings out of 480608
- 60737 string characters out of 5903630
+ 4591 strings out of 480608
+ 61075 string characters out of 5903630
  512471 words of memory out of 5000000
- 20401 multiletter control sequences out of 15000+600000
+ 20417 multiletter control sequences out of 15000+600000
  556317 words of font info for 71 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  30i,12n,40p,648b,1756s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on "/Users/fszhuangb/Downloads/nested sampling with peers/Nested-Sampling-With-Peers/dissertation.pdf" (39 pages, 806316 bytes).
+Output written on "/Users/fszhuangb/Downloads/nested sampling with peers/Nested-Sampling-With-Peers/dissertation.pdf" (41 pages, 957996 bytes).
 PDF statistics:
- 212 PDF objects out of 1000 (max. 8388607)
- 139 compressed objects within 2 object streams
+ 222 PDF objects out of 1000 (max. 8388607)
+ 143 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 41 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 51 words of extra memory for PDF output out of 10000 (max. 10000000)
 
